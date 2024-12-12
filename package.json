@@ -6,7 +6,7 @@
   "scripts": {
     "dev": "vite",
     "build": "vite build  ",
-    "build-s": "tailwindcss build ./src/index.css -D ./public/style.css",
+    "build1": "tailwindcss build ./src/index.css -D ./public/style.css",
     "lint": "eslint .",
     "preview": "vite preview"
   },

@@ -37,7 +37,9 @@ export default {
           addComponents({
             '@media (orientation: landscape)': {
               '.landscape\\:bg-cover': {
-                backgroundImage: 'url("./assets/fundo-landscape.png")',
+                backgroundSize:'cover',
+                backgroundImage: 'url("./src/assets/figma.png")',
+                backgroundRepeat:'no-repeat',
               },
               '.landscape\\:h-custom': {
                 height: '60vh',
@@ -45,10 +47,12 @@ export default {
             },
             '@media (orientation: portrait)': {
               '.portrait\\:bg-cover': {
-                backgroundImage: 'url("./assets/fundo-portrait.png")',
+                backgroundSize:'cover',
+                backgroundImage: 'url("./src/assets/fundo.png")',
+                backgroundRepeat:'no-repeat',
               },
               '.portrait\\:h-custom': {
-                height: '80vh',
+                height: '40vh',
               },
             },
           });
