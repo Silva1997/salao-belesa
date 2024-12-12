@@ -1,6 +1,12 @@
 import React, { useState, useRef } from "react";
 import { motion } from "framer-motion";
 import { Avatar } from "antd";
+import cabelo from './assets/cabelo.jpg'
+import unhas from './assets/unhas1.jpg'
+import makeup from './assets/makeup.png'
+import avatar1 from './assets/picon.png'
+import avatar2 from './assets/picon2.png'
+import pessoa from './assets/pessoa.png'
 
 import { FaArrowRight, FaArrowLeft } from "react-icons/fa";
 
@@ -68,13 +74,13 @@ export default function Rever() {
           <h6 className="text-center pb-2">Escolha pela marca</h6>
           <div className="bg-[#e9f8f8be] flex flex-row gap-2 justify-center items-center">
             <a href="/">
-              <Avatar size={70} src="../src/assets/picon.png" alt="icon" />
+              <Avatar size={70} src={avatar1} alt="avatar produto" />
             </a>
             <a href="/">
               <img
                 className="object-center object-contain w-full h-[90px]"
-                src="../src/assets/picon2.png"
-                alt="icon1"
+                src={avatar2}
+                alt="avatar produto 1"
               />
             </a>
           </div>
@@ -195,7 +201,7 @@ export default function Rever() {
         </div>
 
         {/* Serviços */}
-        <div className="w-full xs-min:pl-4 xs-min:pr-4  overflow-hidden pt-0  xl:h-[27rem] bg-zinc-100 xl:pl-28 xl:pr-28">
+        <div className="w-full xs-min:landscape:h-[60rem] xs-min:pl-4 xs-min:pr-4  overflow-hidden pt-0  xl:h-[27rem] bg-zinc-100 xl:pl-28 xl:pr-28">
           <div className="flex flex-col justify-center gap-1">
             <motion.h5
               className="md:text-2xl xs-min:text-md font-bold xl:text-[1.8rem] 2xl:text-[2rem] text-start text-transparent bg-clip-text bg-gradient-to-r from-amber-500 from-[5%] to-[20%] to-red-500"
@@ -209,11 +215,11 @@ export default function Rever() {
           </div>
           {/*  */}
           <div className="grid md:gap-4 xs-min:gap-2 xs-min:grid-cols-2 xs-min:auto-cols-[150px]  xl:grid-cols-4 xl:gap-6 pt-5 pb-5">
-            <div className="  border-b-2 xs-min:h-[38vh] border-orange-400 flex flex-col rounded-sm w-full xl:h-[55vh] xl:relative overflow-hidden group cursor-pointer">
+            <div className=" xs-min:landscape:h-[104vh]  border-b-2 xs-min:h-[38vh] border-orange-400 flex flex-col rounded-sm w-full xl:h-[55vh] xl:relative overflow-hidden group cursor-pointer">
               {/* <!-- Fundo do Card (Imagem) --> */}
 
               <img
-                src="../src/assets/cabelo.jpg"
+                src={cabelo}
                 alt="Imagem do Card"
                 className=" md:object-center md:object-cover md-w-full xs-min:object-cover xs-min:object-bottom xl:object-cover w-full xl:h-[100%] xs-min:h-[100%] transform transition-transform duration-300 ease-in-out group-active:scale-110 group-hover:scale-105"
               />
@@ -230,10 +236,10 @@ export default function Rever() {
               </div>
             </div>
 
-            <div className=" flex flex-col xs-min:h-[38vh] border-b-2 border-orange-400 rounded-sm w-full xl:h-[55vh] relative overflow-hidden group cursor-pointer">
+            <div className=" xs-min:landscape:h-[104vh] flex flex-col xs-min:h-[38vh] border-b-2 border-orange-400 rounded-sm w-full xl:h-[55vh] relative overflow-hidden group cursor-pointer">
               {/* <!-- Fundo do Card (Imagem) --> */}
               <img
-                src="../src/assets/unhas1.jpg"
+                   src={unhas}
                 alt="Imagem do Card"
                 className="  md:object-center md:object-cover md-w-full  xl:h-[100%]  object-cover xs-min:h-[100%] transform transition-transform duration-300 ease-in-out group-active:scale-110 group-hover:scale-105"
               />
@@ -250,10 +256,10 @@ export default function Rever() {
               </div>
             </div>
 
-            <div className=" xs-min:h-[38vh] border-b-2 border-orange-400 flex flex-col  rounded-sm w-full xl:h-[55vh] relative overflow-hidden group cursor-pointer">
+            <div className=" xs-min:landscape:h-[104vh]  xs-min:h-[38vh] border-b-2 border-orange-400 flex flex-col  rounded-sm w-full xl:h-[55vh] relative overflow-hidden group cursor-pointer">
               {/* <!-- Fundo do Card (Imagem) --> */}
               <img
-                src="../src/assets/unhas1.jpg"
+                src={unhas}
                 alt="Imagem do Card"
                 className=" md:object-center md:object-cover md-w-full  xl:h-[100%]  xl:object-cover xs-min:h-[100%] xl:object-bottom xl:w-full xl:h-[55vh] transform transition-transform duration-300 ease-in-out group-active:scale-110 group-hover:scale-105"
               />
@@ -270,10 +276,10 @@ export default function Rever() {
               </div>
             </div>
 
-            <div className="xs-min:h-[38vh] border-b-2 border-orange-400 flex flex-col rounded-sm w-full xl:h-[55vh] relative overflow-hidden group cursor-pointer">
+            <div className=" xs-min:landscape:h-[104vh] xs-min:h-[38vh] border-b-2 border-orange-400 flex flex-col rounded-sm w-full xl:h-[55vh] relative overflow-hidden group cursor-pointer">
               {/* <!-- Fundo do Card (Imagem) --> */}
               <img
-                src="../src/assets/makeup.png"
+                src={makeup}
                 alt="Imagem do Card"
                 className="  md:object-center md:object-cover md-w-full  xl:h-[100%]  object-cover xs-min:h-[100%] w-full xl:h-[55vh] transform transition-transform duration-300 ease-in-out group-active:scale-110 group-hover:scale-105"
               />
@@ -294,7 +300,7 @@ export default function Rever() {
         </div>
         {/* Nossa equipa */}
 
-        <div className="w-full xs-min:pl-4 xs-min:pr-4 md:h-[69rem]  overflow-hidden pt-0  xl:h-[27rem] bg-zinc-100 xl:pl-28 xl:pr-28">
+        <div className=" xs-min:landscape:h-[68rem] w-full xs-min:pl-4 xs-min:pr-4 md:h-[69rem]  overflow-hidden pt-0  xl:h-[27rem] bg-zinc-100 xl:pl-28 xl:pr-28">
           <div className="flex flex-col justify-center  xs-min:gap-1 xl:gap-1">
             <motion.h5
               className=" md:text-2xl xs-min:text-md font-bold xl:text-[1.8rem] 2xl:text-[2rem] text-start text-transparent bg-clip-text bg-gradient-to-r from-amber-500 from-[5%] to-[20%] to-red-500"
@@ -310,7 +316,7 @@ export default function Rever() {
           <div className="grid md:gap-4 md:grid-cols-2 md:auto-cols-[250px] xs-min:gap-2 xs-min:grid-cols-2 xs-min:auto-cols-[150px]  xl:grid-cols-4 xl:gap-6 pt-5 pb-5">
            
            
-            <div className=" md:h-[41vh]  border-b-2 xs-min:h-[38vh] border-orange-400 flex flex-col rounded-sm w-full xl:h-[55vh] xl:relative overflow-hidden group cursor-pointer">
+            <div className=" xs-min:landscape:h-[120vh] md:h-[41vh]  border-b-2 xs-min:h-[38vh] border-orange-400 flex flex-col rounded-sm w-full xl:h-[55vh] xl:relative overflow-hidden group cursor-pointer">
               {/* <!-- Fundo do Card (Imagem) --> */}
 
             <h6 className="text-black text-[16.5px] font-semibold">
@@ -319,14 +325,14 @@ export default function Rever() {
             </h6>
             <img
               className="object-contain w-full h-[130vh]"
-              src="../src/assets/pessoa.png"
+              src={pessoa}
               alt="pessoa 1"
             />
             <p className="text-black text-[16px]">Cabeleira Profissional</p>
               
             </div>
 
-            <div className=" md:h-[41vh] flex flex-col xs-min:h-[38vh] border-b-2 border-orange-400 rounded-sm w-full xl:h-[55vh] relative overflow-hidden group cursor-pointer">
+            <div className="xs-min:landscape:h-[120vh] md:h-[41vh] flex flex-col xs-min:h-[38vh] border-b-2 border-orange-400 rounded-sm w-full xl:h-[55vh] relative overflow-hidden group cursor-pointer">
               {/* <!-- Fundo do Card (Imagem) --> */}
               <h6 className="text-black text-[16.5px] font-semibold">
               {" "}
@@ -334,13 +340,13 @@ export default function Rever() {
             </h6>
             <img
               className="object-contain w-full h-[130vh]"
-              src="../src/assets/pessoa.png"
+              src={pessoa}
               alt="pessoa 1"
             />
             <p className="text-black text-[16px]">Makeup Senior</p>
             </div>
 
-            <div className=" md:h-[41vh] xs-min:h-[38vh] border-b-2 border-orange-400 flex flex-col  rounded-sm w-full xl:h-[55vh] relative overflow-hidden group cursor-pointer">
+            <div className="xs-min:landscape:h-[120vh] md:h-[41vh] xs-min:h-[38vh] border-b-2 border-orange-400 flex flex-col  rounded-sm w-full xl:h-[55vh] relative overflow-hidden group cursor-pointer">
               {/* <!-- Fundo do Card (Imagem) --> */}
               <h6 className="text-black text-[16.5px] font-semibold">
               {" "}
@@ -348,13 +354,13 @@ export default function Rever() {
             </h6>
             <img
               className="object-contain w-full h-[130vh]"
-              src="../src/assets/pessoa.png"
+              src={pessoa}
               alt="pessoa 1"
             />
             <p className="text-black text-[16px]">Manicure Junior</p>
             </div>
 
-            <div className=" md:h-[41vh] xs-min:h-[38vh] border-b-2 border-orange-400 flex flex-col rounded-sm w-full xl:h-[55vh] relative overflow-hidden group cursor-pointer">
+            <div className="xs-min:landscape:h-[120vh] md:h-[41vh] xs-min:h-[38vh] border-b-2 border-orange-400 flex flex-col rounded-sm w-full xl:h-[55vh] relative overflow-hidden group cursor-pointer">
               {/* <!-- Fundo do Card (Imagem) --> */}
               <h6 className="text-black text-[16.5px] font-semibold">
               {" "}
@@ -362,7 +368,7 @@ export default function Rever() {
             </h6>
             <img
               className="object-contain w-full h-[130vh]"
-              src="../src/assets/pessoa.png"
+              src={pessoa}
               alt="pessoa 1"
             />
             <p className="text-black text-[16px]">Pedicure Senior</p>

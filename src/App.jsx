@@ -2,7 +2,10 @@ import { useState, useRef } from "react";
 import "./index.css";
 import { Avatar, Input } from "antd";
 import { TiThMenu } from "react-icons/ti";
-
+import logo from "./assets/logo.png";
+import icon1 from "./assets/Visao.png";
+import icon2 from "./assets/Valor.png";
+import icon3 from "./assets/Missao.png";
 import {
   FaArrowRight,
   FaArrowLeft,
@@ -42,10 +45,10 @@ function App() {
   return (
     <>
       <nav className="flex xs-min:flex-row  xs-min:bg-white md:flex-row drop-shadow-md xl:bg-white sticky top-0 z-[1000] md:bg-white  md:h-[4.8rem] xs-min:h-[3.8rem] xl:h-[4.5rem] justify-between  overflow-hidden">
-        <div className="lg:pt-4  pl-4 lg:w-28 lg:h-16 md:w-28 md:h-14 xs-min:w-24 xs-min:h-14 xl:w-28 xl:h-24 overflow-hidden">
+        <div className="lg:pt-4  xs-min:landscape:w-28 xs-min:landscape:h-16 pl-4 lg:w-28 lg:h-16 md:w-28 md:h-14 xs-min:w-24 xs-min:h-14 xl:w-28 xl:h-24 overflow-hidden">
           <img
-            className=" lg:object-cover lg:w-full lg:h-[11vh]   xl:object-cover md:object-contain md:w-full md:h-[8.4vh] xs-min:object-contain xs-min:w-full xs-min:h-[9.5vh] xl:w-[14vh] xl:h-[11vh] pt-0   pb-2 mt-0"
-            src="../src/assets/logo.png"
+            className=" xs-min:landscape:w-full xs-min:landscape:h-[24vh]  lg:object-cover lg:w-full lg:h-[11vh]   xl:object-cover md:object-contain md:w-full md:h-[8.4vh] xs-min:object-contain xs-min:w-full xs-min:h-[9.5vh] xl:w-[14vh] xl:h-[11vh] pt-0   pb-2 mt-0"
+            src={logo}
             alt="icon"
           />
         </div>
@@ -53,10 +56,7 @@ function App() {
           <TiThMenu className="text-green-500 lg:text-[3.5rem] md:text-[3rem]  xs-min:text-[1.8rem]    xl:text-[2.5rem]" />
         </button>
       </nav>
-      {/*     md:bg-[url('./assets/fundo.png')]
-    xs-min:bg-[url('./assets/fundo.png')]
-        xl:bg-[url('./assets/figma.png')] 
-     */}
+      {/* fundo de imagem */}
       <div
         className=" 
     xs-min:bg-center
@@ -67,7 +67,7 @@ function App() {
     xs-min:portrait:bg-cover 
     xs-min:bg-[url('./assets/fundo.png')]
     xs-min:portrait:h-[67vh]  /* Ajuste para 70vh ou uma altura fixa para garantir que a imagem cubra a área */
-    xs-min:landscape:h-[110vh]  
+    xs-min:landscape:h-[120vh]  
     xs-min:landscape:bg-[url('./assets/figma.png')]
 
     md:bg-[url('./assets/figma.png')]
@@ -94,13 +94,16 @@ function App() {
       
       xl:flex-col
       xs-min:flex-col  
-      lg:flex-col
-      xs-min:items-center 
+      xs-min:landscape:items-center 
       xs-min:w-full 
+
+      lg:flex-col
+    
       xl:gap-12
       xl:items-start
+
       md:flex-col
-      md:items-start
+      md:items-center
       md:pt-56
       md:pl-5
   
@@ -113,15 +116,17 @@ function App() {
       sm:text-sm  
       xs-min:gap-6 
       xs-min:pl-3
-      xs-min:pt-56"
+      xs-min:items-center
+      xs-min:pt-56
+      xs-min:landscape:pt-40"
         >
           <h6
             className="
-        md:text-[1.5rem]
-        md:leading-6
-        md:text-transparent bg-clip-text bg-gradient-to-r from-white from-[75%] to-[25%] to-red-500
-        xs-min:text-[1.12rem]
-        xs-min:text-base/4
+        md:text-[3rem]
+        md:leading-10
+        md:landscape:text-transparent bg-clip-text bg-gradient-to-r from-white from-[48%] to-[50%] to-red-500
+        xs-min:text-[1.32rem]
+        xs-min:leading-5
         xs-min:text-white
         xs-min:font-bold
 
@@ -159,6 +164,10 @@ function App() {
         xs-min:text-white
 
         md:ml-2 
+        md:w-[300px]
+        md:text-3xl
+        md:p-4
+        md:text-center
         lg:max-w-2xl
         lg:w-[300px]
         lg:p-3
@@ -193,17 +202,21 @@ function App() {
               Malanje-Maxinde{" "}
             </p>
             <FaPhoneAlt className=" lg:text-3xl xs-min:text-[18px] hover:bg-transparent hover:border-2 border-orange-400   bg-blue-500 rounded-[50%]  cursor-pointer p-1 xl:text-2xl" />{" "}
-            <p className="lg:text-2xl xs-min:text-[13px]   xl:text-[1.2rem]"> 92013000 </p>
+            <p className="lg:text-2xl xs-min:text-[13px]   xl:text-[1.2rem]">
+              {" "}
+              92013000{" "}
+            </p>
           </span>
         </div>
       </div>
+    {/*fim  */}
 
       {/* Valores da empresa */}
       <div className=" xs-min:-top-8 xs-min:z-[500]  flex  lg:flex-row   xs-min:pl-4 xs-min:pr-4 xs-min:flex-row   xl:flex-row relative xl:-top-4 xl:z-[500] justify-center content-center items-center">
-        <div className=" lg:w-[45vh] xs-min:w-[35vh] lg:h-[26rem] xs-min:h-[19rem]  drop-shadow-lg p-2 flex flex-col items-center bg-gradient-to-l from-white from-[99%] to-[1%] to-orange-400 xl:w-[40vh] rounded-s-md xl:h-[17rem]">
+        <div className=" xs-min:landscape:w-[58vh] lg:w-[45vh] xs-min:w-[35vh] lg:h-[26rem] xs-min:h-[19rem]  drop-shadow-lg p-2 flex flex-col items-center bg-gradient-to-l from-white from-[99%] to-[1%] to-orange-400 xl:w-[40vh] rounded-s-md xl:h-[17rem]">
           <img
             className="object-center  lg-min:w-[40px] lg:w-[40px] xs-min:w-[20px] md:w-[35px] md:h-[35px] xs-min:h-[20px] xl:w-[40px]  xl:h-[40px] p-0 m-0 rounded-[50%] "
-            src="../src/assets/Visao.png"
+            src={icon1}
             alt="Valor"
           />
 
@@ -219,10 +232,10 @@ function App() {
           </p>
         </div>
 
-        <div className="  lg:w-[45vh] lg:h-[26rem]  xs-min:w-[35vh] xs-min:h-[19rem]   drop-shadow-lg flex p-2 flex-col items-center bg-gradient-to-r from-slate-500 to-slate-800 xl:w-[40vh] text-white  xl:h-[17rem]">
+        <div className=" xs-min:landscape:w-[58vh]  lg:w-[45vh] lg:h-[26rem]  xs-min:w-[35vh] xs-min:h-[19rem]   drop-shadow-lg flex p-2 flex-col items-center bg-gradient-to-r from-slate-500 to-slate-800 xl:w-[40vh] text-white  xl:h-[17rem]">
           <img
             className=" lg-min:w-[40px] lg:w-[40px]  md:w-[35px] md:h-[35px]  xs-min:w-[20px] xs-min:h-[20px] object-center xl:w-[40px]  xl:h-[40px] pt-0 m-0 rounded-[50%] "
-            src="../src/assets/Missao.png"
+            src={icon3}
             alt="Valor"
           />
 
@@ -236,10 +249,10 @@ function App() {
             </p>
           </h6>
         </div>
-        <div className="lg:w-[45vh] lg:h-[26rem]   xs-min:w-[35vh] xs-min:h-[19rem]   drop-shadow-lg flex flex-col p-2 items-center shadow-zinc-800 bg-gradient-to-r from-white from-[99%] to-[1%] to-orange-400 xl:w-[40vh] rounded-e-md xl:h-[17rem]">
+        <div className=" xs-min:landscape:w-[58vh] lg:w-[45vh] lg:h-[26rem]   xs-min:w-[35vh] xs-min:h-[19rem]   drop-shadow-lg flex flex-col p-2 items-center shadow-zinc-800 bg-gradient-to-r from-white from-[99%] to-[1%] to-orange-400 xl:w-[40vh] rounded-e-md xl:h-[17rem]">
           <img
             className=" lg-min:w-[40px] lg:w-[40px] md:w-[38px] md:h-[38px] xs-min:w-[20px] xs-min:h-[20px] object-center xl:w-[40px]  xl:h-[40px] pt-0 m-0 rounded-[50%] "
-            src="../src/assets/Valor.png"
+            src={icon2}
             alt="Valor"
           />
 
