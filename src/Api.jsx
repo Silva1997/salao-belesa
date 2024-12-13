@@ -165,7 +165,7 @@ export default function Rever() {
             </motion.h5>
             <hr className="xs-min:w-28 md:w-32 xl:w-44 bg-none border-t-4 border-t-orange-400" />
           </div>
-          <div className="grid place-items-center grid-cols-2 auto-cols-auto xl:gap-1 xs-min:gap-3">
+          <div className="grid place-items-center grid-cols-2 auto-cols-auto xl:gap-1 xs-min:gap-3 overflow-hidden">
             <div className="xs-min:h-[22rem] md:h-auto w-full xl:h-[24rem]">
               <p className="xs-min:text-[1.06rem] md:text-[1.5rem] xs-min:-tracking-[1px] text-black xl:pt-2 text-justify pt-22 block xl:text-[1.56rem] ms-0 me-0">
                 No coração de Malanje, Espelho Meu é um salão que brilha não só
@@ -178,19 +178,22 @@ export default function Rever() {
                 Afinal, quem é a mais bela do reino?
               </p>
             </div>
-            <div className="w-full  md:h-auto xs-min:h-[20rem] xl:h-[24rem]">
-              <div className="flex  md:relative md:top-20 xl:top-0    w-full xl:pt-5  xs-min:flex-col md:flex-col xl:flex-row xs-min:gap-6  md:gap-1 xl:gap-1 xl:relative z-0">
-                <div className="xs-min:w-full xs-min:h-[10rem] bg-no-repeat bg-cover bg-center bg-[url('./assets/icon1.jpg')] xl:relative md:relative md:-top-2 rounded-md md:w-40 z-1 xl:-top-2 md:left-6 xl:left-60 xl:w-full xl:h-[10rem] bg-violet-800">
+            <div className="w-full   md:h-auto xs-min:h-[20rem] xl:h-[24rem]">
+              <div className="flex  md:relative  md:left-0 md:top-16 xl:top-0    w-full xl:pt-5  xs-min:flex-col md:flex-col xl:flex-row xs-min:gap-6  md:gap-1 xl:gap-1 xl:relative z-0">
+              
+                <div className="xs-min:w-full xs-min:h-[10rem] bg-no-repeat bg-cover bg-center bg-[url('./assets/icon1.jpg')] xl:relative md:relative md:-top-2 rounded-md md:w-40 z-1 xl:-top-2 md:left-24 xl:left-60 xl:w-full xl:h-[10rem] bg-violet-800">
                   <h6 className="text-center xs-min:text-sm relative top-[-28px] text-black">
                     Fé
                   </h6>
                 </div>
-                <div className="xs-min:w-full xs-min:h-[10rem] bg-no-repeat bg-cover bg-center bg-[url('./assets/icon2.png')]  xl:relative md:relative rounded-md z-2 md:w-40 md:top-[8px] xl:top-[184px] md:left-6 xl:left-14 right-[60px] xl:w-full xl:h-[11rem] bg-slate-500">
+
+                <div className="xs-min:w-full xs-min:h-[10rem] bg-no-repeat bg-cover bg-center bg-[url('./assets/icon2.png')]  xl:relative md:relative rounded-md z-2 md:w-40 md:top-[8px] xl:top-[184px] md:left-24 xl:left-14 right-[60px] xl:w-full xl:h-[11rem] bg-slate-500">
                   <h6 className="text-center xs-min:text-sm xs-min:p-2 relative top-[-28px] text-black">
                     Foco
                   </h6>
                 </div>
-                <div className="xs-min:w-full xs-min:h-[10rem] bg-no-repeat bg-cover bg-center bg-[url('./assets/icon3.png')] xl:relative md:relative rounded-md z-3 md:w-40 md:-top-60 md:left-48 xl:top-20 xl:-left-1 right-20 xl:w-full xl:h-[12rem] bg-neutral-500">
+
+                <div className="xs-min:w-full xs-min:h-[10rem] bg-no-repeat bg-cover bg-center bg-[url('./assets/icon3.png')] xl:relative md:relative rounded-md z-3 md:w-40 md:-top-60 md:left-[16.5rem] xl:top-20 xl:-left-1 right-20 xl:w-full xl:h-[12rem] bg-neutral-500">
                   <h6 className="text-center xs-min:text-sm xs-min:p-2  relative top-[-28px] text-black">
                     Trabalho
                   </h6>
@@ -201,7 +204,7 @@ export default function Rever() {
         </div>
 
         {/* Serviços */}
-        <div className="w-full xs-min:landscape:h-[60rem] xs-min:pl-4 xs-min:pr-4  overflow-hidden pt-0  xl:h-[27rem] bg-zinc-100 xl:pl-28 xl:pr-28">
+        <div className="w-full xs-min:landscape:h-[60rem] xs-min:max-h-auto xs-min:pl-4 xs-min:pr-4  md:h-auto     overflow-hidden pt-0  xl:h-[27rem] bg-zinc-100 xl:pl-28 xl:pr-28">
           <div className="flex flex-col justify-center gap-1">
             <motion.h5
               className="md:text-2xl xs-min:text-md font-bold xl:text-[1.8rem] 2xl:text-[2rem] text-start text-transparent bg-clip-text bg-gradient-to-r from-amber-500 from-[5%] to-[20%] to-red-500"
@@ -214,19 +217,19 @@ export default function Rever() {
             <hr className="xs-min:w-28 xl:w-44 bg-none xs-min:border-t-4 xl:border-t-4 border-orange-400" />
           </div>
           {/*  */}
-          <div className="grid md:gap-4 xs-min:gap-2 xs-min:grid-cols-2 xs-min:auto-cols-[150px]  xl:grid-cols-4 xl:gap-6 pt-5 pb-5">
-            <div className=" xs-min:landscape:h-[104vh]  border-b-2 xs-min:h-[38vh] border-orange-400 flex flex-col rounded-sm w-full xl:h-[55vh] xl:relative overflow-hidden group cursor-pointer">
+          <div className="grid  md:gap-4 xs-min:gap-2 xs-min:grid-cols-2 md:grid-cols-4 xs-min:grid-rows-[26vh_26vh]   xl:grid-cols-4 xl:auto-cols-[250px] xl:gap-6 pt-5 pb-5">
+            <div className="    xs-min:landscape:h-[104vh]  border-b-2  border-orange-400 flex flex-col rounded-sm w-full xl:h-[55vh] xl:relative overflow-hidden group cursor-pointer">
               {/* <!-- Fundo do Card (Imagem) --> */}
 
               <img
                 src={cabelo}
                 alt="Imagem do Card"
-                className=" md:object-center md:object-cover md-w-full xs-min:object-cover xs-min:object-bottom xl:object-cover w-full xl:h-[100%] xs-min:h-[100%] transform transition-transform duration-300 ease-in-out group-active:scale-110 group-hover:scale-105"
+                className=" xs-min:max-w-[100%] xs-min:max-h-[100%] md:object-center md:object-cover md-w-full xs-min:object-cover xs-min:object-bottom xl:object-cover w-full xl:h-[100%] xs-min:h-[100%] transform transition-transform duration-300 ease-in-out group-active:scale-110 group-hover:scale-105"
               />
 
               {/* <!-- Cabeleiro Conteúdo do Card --> */}
 
-              <div className="md:-top-28 relative xs-min:-top-11 xl:-top-24 pl-4">
+              <div className="md:-top-28 relative xs-min:-top-20 xl:-top-24 pl-4">
                 <h6 className=" md:text-[1.7rem] xs-min:text-xl xl:text-[1.8rem] text-start text-transparent bg-clip-text bg-gradient-to-r from-amber-500 from-[5%] to-[20%] to-red-500 font-bold">
                   Cabeleiro
                 </h6>
@@ -236,7 +239,7 @@ export default function Rever() {
               </div>
             </div>
 
-            <div className=" xs-min:landscape:h-[104vh] flex flex-col xs-min:h-[38vh] border-b-2 border-orange-400 rounded-sm w-full xl:h-[55vh] relative overflow-hidden group cursor-pointer">
+            <div className="   xs-min:landscape:h-[104vh] flex flex-col  border-b-2 border-orange-400 rounded-sm w-full xl:h-[55vh] relative overflow-hidden group cursor-pointer">
               {/* <!-- Fundo do Card (Imagem) --> */}
               <img
                    src={unhas}
@@ -256,7 +259,7 @@ export default function Rever() {
               </div>
             </div>
 
-            <div className=" xs-min:landscape:h-[104vh]  xs-min:h-[38vh] border-b-2 border-orange-400 flex flex-col  rounded-sm w-full xl:h-[55vh] relative overflow-hidden group cursor-pointer">
+            <div className="  xs-min:landscape:h-[104vh]   border-b-2 border-orange-400 flex flex-col  rounded-sm w-full xl:h-[55vh] relative overflow-hidden group cursor-pointer">
               {/* <!-- Fundo do Card (Imagem) --> */}
               <img
                 src={unhas}
@@ -266,7 +269,7 @@ export default function Rever() {
 
               {/* <!-- Penicure Conteúdo do Card --> */}
 
-              <div className="relative md:-top-28 xs-min:-top-10 xl:-top-24 pl-4">
+              <div className="relative md:-top-28 xs-min:-top-20 xl:-top-24 pl-4">
                 <h6 className=" md:text-[1.7rem] xs-min:text-xl xl:text-[1.8rem] text-start text-transparent bg-clip-text bg-gradient-to-r from-amber-500 from-[5%] to-[20%] to-red-500 font-bold">
                   Pedicure
                 </h6>
@@ -276,16 +279,16 @@ export default function Rever() {
               </div>
             </div>
 
-            <div className=" xs-min:landscape:h-[104vh] xs-min:h-[38vh] border-b-2 border-orange-400 flex flex-col rounded-sm w-full xl:h-[55vh] relative overflow-hidden group cursor-pointer">
+            <div className="  xs-min:landscape:h-[104vh]  border-b-2 border-orange-400 flex flex-col rounded-sm w-full xl:h-[55vh] relative overflow-hidden group cursor-pointer">
               {/* <!-- Fundo do Card (Imagem) --> */}
               <img
                 src={makeup}
                 alt="Imagem do Card"
-                className="  md:object-center md:object-cover md-w-full  xl:h-[100%]  object-cover xs-min:h-[100%] w-full xl:h-[55vh] transform transition-transform duration-300 ease-in-out group-active:scale-110 group-hover:scale-105"
+                className="  md:object-center md:object-cover md-w-full  xl:h-[100%]  object-cover xs-min:h-[100%] w-full transform transition-transform duration-300 ease-in-out group-active:scale-110 group-hover:scale-105"
               />
 
               {/* <!-- Makeup Conteúdo do Card --> */}
-              <div className="relative xs-min:-top-28 xl:-top-24 pl-4">
+              <div className="relative xs-min:-top-20 xl:-top-24 pl-4">
                 <h6 className=" md:text-[1.7rem] xs-min:text-xl xl:text-[1.8rem] text-start text-transparent bg-clip-text bg-gradient-to-r from-amber-500 from-[5%] to-[20%] to-red-500 font-bold">
                   Makeup
                 </h6>
@@ -300,7 +303,7 @@ export default function Rever() {
         </div>
         {/* Nossa equipa */}
 
-        <div className=" xs-min:landscape:h-[68rem] w-full xs-min:pl-4 xs-min:pr-4 md:h-[69rem]  overflow-hidden pt-0  xl:h-[27rem] bg-zinc-100 xl:pl-28 xl:pr-28">
+        <div className=" xs-min:max-h-auto xs-min:landscape:h-[68rem] w-full xs-min:pl-4 xs-min:pr-4 md:h-[69rem]  overflow-hidden pt-0  xl:h-[27rem] bg-zinc-100 xl:pl-28 xl:pr-28">
           <div className="flex flex-col justify-center  xs-min:gap-1 xl:gap-1">
             <motion.h5
               className=" md:text-2xl xs-min:text-md font-bold xl:text-[1.8rem] 2xl:text-[2rem] text-start text-transparent bg-clip-text bg-gradient-to-r from-amber-500 from-[5%] to-[20%] to-red-500"
@@ -313,10 +316,10 @@ export default function Rever() {
             <hr className="xs-min:w-28 xl:w-44 bg-none xs-min:border-t-4 xl:border-t-4 border-orange-400" />
           </div>
           {/*  */}
-          <div className="grid md:gap-4 md:grid-cols-2 md:auto-cols-[250px] xs-min:gap-2 xs-min:grid-cols-2 xs-min:auto-cols-[150px]  xl:grid-cols-4 xl:gap-6 pt-5 pb-5">
+          <div className=" xs-min:grid-rows-[28vh_28vh] overflow-hiddem  grid md:gap-4 md:grid-cols-2 md:auto-cols-[250px] xs-min:gap-2 xs-min:grid-cols-2   xl:grid-cols-4 xl:gap-6 pt-5 pb-5">
            
            
-            <div className=" xs-min:landscape:h-[120vh] md:h-[41vh]  border-b-2 xs-min:h-[38vh] border-orange-400 flex flex-col rounded-sm w-full xl:h-[55vh] xl:relative overflow-hidden group cursor-pointer">
+            <div className=" xs-min:bg-white xs-min:landscape:h-[120vh] md:h-[41vh]  border-b-2 xs-min:h-[27vh] border-orange-400 flex flex-col rounded-sm w-full xl:h-[55vh]   group cursor-pointer">
               {/* <!-- Fundo do Card (Imagem) --> */}
 
             <h6 className="text-black text-[16.5px] font-semibold">
@@ -324,7 +327,7 @@ export default function Rever() {
               Ana Silva
             </h6>
             <img
-              className="object-contain w-full h-[130vh]"
+              className="object-cover w-full xs-min:h-[100%]"
               src={pessoa}
               alt="pessoa 1"
             />
@@ -332,7 +335,7 @@ export default function Rever() {
               
             </div>
 
-            <div className="xs-min:landscape:h-[120vh] md:h-[41vh] flex flex-col xs-min:h-[38vh] border-b-2 border-orange-400 rounded-sm w-full xl:h-[55vh] relative overflow-hidden group cursor-pointer">
+            <div className="xs-min:bg-white   xs-min:landscape:h-[120vh] md:h-[41vh] flex flex-col xs-min:h-[27vh] border-b-2 border-orange-400 rounded-sm w-full xl:h-[55vh] relative overflow-hidden group cursor-pointer">
               {/* <!-- Fundo do Card (Imagem) --> */}
               <h6 className="text-black text-[16.5px] font-semibold">
               {" "}
@@ -346,7 +349,7 @@ export default function Rever() {
             <p className="text-black text-[16px]">Makeup Senior</p>
             </div>
 
-            <div className="xs-min:landscape:h-[120vh] md:h-[41vh] xs-min:h-[38vh] border-b-2 border-orange-400 flex flex-col  rounded-sm w-full xl:h-[55vh] relative overflow-hidden group cursor-pointer">
+            <div className="xs-min:bg-white    xs-min:landscape:h-[120vh] md:h-[41vh] xs-min:h-[27vh] border-b-2 border-orange-400 flex flex-col  rounded-sm w-full xl:h-[55vh] relative overflow-hidden group cursor-pointer">
               {/* <!-- Fundo do Card (Imagem) --> */}
               <h6 className="text-black text-[16.5px] font-semibold">
               {" "}
@@ -360,7 +363,7 @@ export default function Rever() {
             <p className="text-black text-[16px]">Manicure Junior</p>
             </div>
 
-            <div className="xs-min:landscape:h-[120vh] md:h-[41vh] xs-min:h-[38vh] border-b-2 border-orange-400 flex flex-col rounded-sm w-full xl:h-[55vh] relative overflow-hidden group cursor-pointer">
+            <div className="xs-min:bg-white  xs-min:landscape:h-[120vh] md:h-[41vh] xs-min:h-[27vh] border-b-2 border-orange-400 flex flex-col rounded-sm w-full xl:h-[55vh] relative overflow-hidden group cursor-pointer">
               {/* <!-- Fundo do Card (Imagem) --> */}
               <h6 className="text-black text-[16.5px] font-semibold">
               {" "}

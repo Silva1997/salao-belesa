@@ -44,10 +44,10 @@ function App() {
 
   return (
     <>
-      <nav className="flex xs-min:flex-row  xs-min:bg-white md:flex-row drop-shadow-md xl:bg-white sticky top-0 z-[1000] md:bg-white  md:h-[4.8rem] xs-min:h-[3.8rem] xl:h-[4.5rem] justify-between  overflow-hidden">
-        <div className="lg:pt-4  xs-min:landscape:w-28 xs-min:landscape:h-16 pl-4 lg:w-28 lg:h-16 md:w-28 md:h-14 xs-min:w-24 xs-min:h-14 xl:w-28 xl:h-24 overflow-hidden">
+      <nav className="flex xs-min:flex-row  xs-min:bg-red-300 md:flex-row drop-shadow-md xl:bg-white sticky top-0 z-[1000] md:bg-blue-300  sm:bg-green-300 lg:bg-zinc-400 2xl:bg-violet-800  md:h-[4.8rem] xs-min:h-[3.8rem] xl:h-[4.5rem] justify-between  overflow-hidden">
+        <div className="lg:pt-1   xs-min:landscape:w-auto xs-min:landscape:h-auto pl-4  md:w-28 md:h-14 xs-min:w-24 xs-min:h-14 xl:w-28 xl:h-24 overflow-hidden">
           <img
-            className=" xs-min:landscape:w-full xs-min:landscape:h-[24vh]  lg:object-cover lg:w-full lg:h-[11vh]   xl:object-cover md:object-contain md:w-full md:h-[8.4vh] xs-min:object-contain xs-min:w-full xs-min:h-[9.5vh] xl:w-[14vh] xl:h-[11vh] pt-0   pb-2 mt-0"
+            className=" xs-min:bg-white xs-min:landscape:w-full xs-min:landscape:h-[100%]  xl:object-cover md:object-contain md:w-full md:h-[8.4vh] xs-min:object-cover xs-min:w-[100%] xs-min:h-[100%] xl:w-[14vh] xl:h-[11vh] pt-0   mt-0"
             src={logo}
             alt="icon"
           />
