@@ -44,10 +44,10 @@ function App() {
 
   return (
     <>
-      <nav className="flex xs-min:flex-row  xs-min:bg-red-300 md:flex-row drop-shadow-md xl:bg-white sticky top-0 z-[1000] md:bg-blue-300  sm:bg-green-300 lg:bg-zinc-400 2xl:bg-violet-800  md:h-[4.8rem] xs-min:h-[3.8rem] xl:h-[4.5rem] justify-between  overflow-hidden">
-        <div className="lg:pt-1   xs-min:landscape:w-auto xs-min:landscape:h-auto pl-4  md:w-28 md:h-14 xs-min:w-24 xs-min:h-14 xl:w-28 xl:h-24 overflow-hidden">
+      <nav  className="md:bg-blue-300  flex xs-min:flex-row  xs-min:bg-red-300 md:flex-row drop-shadow-md xl:bg-white sticky top-0 z-[1000]   sm:bg-green-300 lg:bg-zinc-400 2xl:bg-violet-800  md:h-[4.8rem] xs-min:h-[3.8rem] xl:h-[4.5rem] justify-between  overflow-hidden">
+        <div className="lg:pt-1 xs-min:pt-1  md:pt-0  xs-min:landscape:w-auto xs-min:landscape:h-auto pl-4  md:w-28 md:h-auto xs-min:w-24 xs-min:h-14 xl:w-28 xl:h-24 overflow-hidden">
           <img
-            className=" xs-min:bg-white xs-min:landscape:w-full xs-min:landscape:h-[100%]  xl:object-cover md:object-contain md:w-full md:h-[8.4vh] xs-min:object-cover xs-min:w-[100%] xs-min:h-[100%] xl:w-[14vh] xl:h-[11vh] pt-0   mt-0"
+            className=" xs-min:bg-white  xs-min:landscape:w-full xs-min:landscape:h-[100%]  xl:object-cover md:object-contain md:w-full md:h-[100%] xs-min:object-cover xs-min:w-[100%] xs-min:h-[100%] xl:w-[14vh] xl:h-[11vh] pt-0   mt-0"
             src={logo}
             alt="icon"
           />
@@ -71,10 +71,10 @@ function App() {
     xs-min:landscape:bg-[url('./assets/figma.png')]
 
     md:bg-[url('./assets/figma.png')]
-    md:w-[100%]
-    md:bg-cover
-    md:h-full
-    md:bg-right-top
+    md:w-auto
+  
+    md:h-auto
+    md:bg-center
   
     xl:w-full
     xl:bg-center
@@ -97,15 +97,16 @@ function App() {
       xs-min:landscape:items-center 
       xs-min:w-full 
 
-      lg:flex-col
+
     
       xl:gap-12
       xl:items-start
-
+      md:mt-0
+      md:pt-40
       md:flex-col
       md:items-center
-      md:pt-56
-      md:pl-5
+  
+      md:m-[auto_0px]
   
 
      lg:flex-col
@@ -122,7 +123,7 @@ function App() {
         >
           <h6
             className="
-        md:text-[3rem]
+        md:text-[2rem]
         md:leading-10
         md:landscape:text-transparent bg-clip-text bg-gradient-to-r from-white from-[48%] to-[50%] to-red-500
         xs-min:text-[1.32rem]
@@ -164,9 +165,9 @@ function App() {
         xs-min:text-white
 
         md:ml-2 
-        md:w-[300px]
-        md:text-3xl
-        md:p-4
+        md:w-[250px]
+        md:text-2xl
+        md:p-2
         md:text-center
         lg:max-w-2xl
         lg:w-[300px]

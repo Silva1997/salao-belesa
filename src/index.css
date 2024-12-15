@@ -2,6 +2,14 @@
 @tailwind components;
 @tailwind utilities;
 
+
+@layer components{
+
+    .media_768{
+        @apply md:bg-blue-400
+    }
+    
+}
 /* @media only screen and (min-width: 360px) {
     .element {
      
