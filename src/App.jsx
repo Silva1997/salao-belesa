@@ -32,7 +32,12 @@ function App() {
           <TiThMenu className="text-green-500 lg:text-[3.5rem] md:text-[3rem]  xs-min:text-[1.8rem]    xl:text-[2.5rem]" />
         </button>
       </nav>
-      {/* fundo de imagem */}
+      {/* fundo de imagem 
+      
+         xs-min:portrait:h-[67vh]  /* Ajuste para 70vh ou uma altura fixa para garantir que a imagem cubra a área 
+     xs-min:landscape:h-[120vh]   xs-min:landscape:bg-[url('./assets/figma.png')]
+      
+      */}
       <div
         className=" 
     xs-min:bg-center
@@ -42,15 +47,13 @@ function App() {
     xs-min:landscape:bg-cover 
     xs-min:portrait:bg-cover 
     xs-min:bg-[url('./assets/fundo.png')]
-    xs-min:portrait:h-[67vh]  /* Ajuste para 70vh ou uma altura fixa para garantir que a imagem cubra a área */
-    xs-min:landscape:h-[120vh]  
-    xs-min:landscape:bg-[url('./assets/figma.png')]
+ 
 
-    md:bg-none
-    md:w-auto
-  
-    md:h-auto
-    md:bg-center
+    md:bg-[url('./assets/media.png')]
+    md:w-full  
+    md:bg-contain
+    md:bg-[center_top_-200px]
+    md:h-[50rem]
   
     xl:w-full
     xl:bg-center
@@ -78,11 +81,13 @@ function App() {
       xl:gap-12
       xl:items-start
       md:mt-0
-      md:pt-50
+      md:pt-0
+      md:relative
+      md:top-[24rem]
       md:flex-col
       md:items-center
-  
-      md:m-[auto_0px]
+      md:gap-1
+      
   
 
      lg:flex-col
@@ -99,13 +104,17 @@ function App() {
         >
           <h6
             className="
-        md:text-[2rem]
+            md:ml-0
+        md:text-[1.7rem]
         md:leading-10
-        md:landscape:text-transparent bg-clip-text bg-gradient-to-r from-white from-[48%] to-[50%] to-red-500
+        md:text-transparent bg-clip-text bg-gradient-to-r from-red-300 from-[48%] to-[100%] to-orange-300
+
         xs-min:text-[1.32rem]
         xs-min:leading-5
+        md:font-extrabold
         xs-min:text-white
         xs-min:font-bold
+
 
         font-sans 
         xl:font-semibold 
@@ -140,11 +149,12 @@ function App() {
         xs-min:text-[17px]
         xs-min:text-white
 
-        md:ml-1 
-        md:w-[250px]
+        md:ml-0 
+        md:w-[230px]
         md:text-2xl
         md:p-2
         md:text-center
+        md:mr-6
 
         lg:max-w-2xl
         lg:w-[300px]
@@ -164,11 +174,13 @@ function App() {
           <span
             className=" 
 
-        flex flex-row xl:gap-2
+        flex flex-row 
+        xl:gap-2
         xs-min:gap-1
         text-white
 
-        md:ml-2
+        md:ml-0
+          md:mr-6
         lg:gap-2
         xs-min:relative 
         xs-min:top-4

@@ -59,14 +59,14 @@ export default function Grid() {
     <button
       onClick={() => scroll("left")}
       disabled={!pscrollLeft}
-      className="md:mt-2 rounded-[50%] p-2 bg-gradient-to-r from-amber-500 from-[5%] to-[20%] to-red-500 hover:bg-violet-500 disabled:cursor-not-allowed mr-1"
+      className="md:mt-2 md:text-4xl rounded-[50%] p-2 bg-gradient-to-r from-amber-500 from-[5%] to-[20%] to-red-500 hover:bg-violet-500 disabled:cursor-not-allowed mr-1"
     >
       <FaArrowLeft />
     </button>
     <button
       onClick={() => scroll("right")}
       disabled={!pscrollright}
-      className=" md:mb-2 rounded-[50%] p-2 bg-gradient-to-r from-amber-500 from-[5%] to-[20%] to-red-500 hover:bg-violet-500 disabled:cursor-not-allowed"
+      className=" md:mb-2 md:text-4xl rounded-[50%] p-2 bg-gradient-to-r from-amber-500 from-[5%] to-[20%] to-red-500 hover:bg-violet-500 disabled:cursor-not-allowed"
     >
       <FaArrowRight />
     </button>
