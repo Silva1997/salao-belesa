@@ -6,18 +6,12 @@ import logo from "./assets/logo.png";
 import icon1 from "./assets/Visao.png";
 import icon2 from "./assets/Valor.png";
 import icon3 from "./assets/Missao.png";
-import {
- 
-  FaPhoneAlt,
-  FaMapMarkerAlt,
-} from "react-icons/fa";
+import { FaPhoneAlt, FaMapMarkerAlt } from "react-icons/fa";
 import Rever from "./Api";
 
-import {Index,Grid,Sobre}  from "./utils/Utils";
-
+import { Index, Grid, Sobre } from "./utils/Utils";
 
 function App() {
-
   return (
     <>
       <nav className="md:bg-blue-300  flex xs-min:flex-row  xs-min:bg-red-300 md:flex-row drop-shadow-md xl:bg-white sticky top-0 z-[1000]   sm:bg-green-300 lg:bg-zinc-400 2xl:bg-violet-800  md:h-[4.8rem] xs-min:h-[3.8rem] xl:h-[4.5rem] justify-between  overflow-hidden">
@@ -48,12 +42,17 @@ function App() {
     xs-min:portrait:bg-cover 
     xs-min:bg-[url('./assets/fundo.png')]
  
+md:grid
+md:grid-cols-1
+md:auto-cols-[250px]
+md:grid-rows-[25rem_25rem]
+md:place-items-center
 
     md:bg-[url('./assets/media.png')]
     md:w-full  
     md:bg-contain
-    md:bg-[center_top_-200px]
-    md:h-[50rem]
+ 
+    overflow-hidden
   
     xl:w-full
     xl:bg-center
@@ -80,10 +79,16 @@ function App() {
     
       xl:gap-12
       xl:items-start
+
+
+    landscape:hidden
+     
+
       md:mt-0
       md:pt-0
       md:relative
-      md:top-[24rem]
+      md:top-[25rem]
+      md:p-10
       md:flex-col
       md:items-center
       md:gap-1
@@ -257,17 +262,13 @@ function App() {
         </div>
       </div>
       {/*  */}
-      <Index/>
-      <Grid/>
+      <Index />
+      <Grid />
       {/* <Sobre /> */}
-      
- 
     </>
   );
 }
 export default App;
-
-
 
 // const Carousel_1 = () => (
 //   <>
@@ -315,56 +316,55 @@ export default App;
 //         <div
 //           ref={scrolltrolador}
 //           onScroll={updateButton}
-//           className=" 
-     
-// xs-min:grid xs-min:overflow-y-hidden xs-min:overflow-x-hidden 
+//           className="
+
+// xs-min:grid xs-min:overflow-y-hidden xs-min:overflow-x-hidden
 // xs-min:grid-flow-col
 // xs-min:auto-cols-[250px]
 // xs-min:gap-2
 // xs-min:pb-4
 
-
-//         xl:grid 
+//         xl:grid
 //         xl:overflow-y-hidden
 //         xl:overflow-x-hidden
 //         xl:auto-cols-[350px]
-//         xl:grid-flow-col 
+//         xl:grid-flow-col
 //         xl:place-items-center
 //         xl:gap-7
 //         xl:pb-4
 //         "
 //         >
 //           <div
-//             className=" 
+//             className="
 //               border-[2px] border-amber-400
 //             bg-[url('./assets/Tranca1.png')]
 //             bg-cover
 //             bg-center
-//             bg-no-repeat  
-//           -min:w-80 xs-min:h-[20rem]    
+//             bg-no-repeat
+//           -min:w-80 xs-min:h-[20rem]
 //             xl:w-[60vh] xl:h-[20rem] bg-zinc-900 "
 //           >
 //             01
 //           </div>
 
 //           <div
-//             className=" 
+//             className="
 //                border-[2px] border-amber-400
 //              bg-[url('./assets/Tranca2.png')]
 //             bg-cover
 //             bg-center
-//             bg-no-repeat 
+//             bg-no-repeat
 //          xl:w-[60vh] xl:h-[20rem] bg-red-500"
 //           >
 //             02
 //           </div>
 //           <div
-//             className="  
+//             className="
 //                border-[2px] border-amber-400
 //              bg-[url('./assets/Tranca3.png')]
 //             bg-cover
 //             bg-center
-//             bg-no-repeat 
+//             bg-no-repeat
 //         xl:w-[60vh] xl:h-[20rem] bg-blue-500"
 //           >
 //             03
