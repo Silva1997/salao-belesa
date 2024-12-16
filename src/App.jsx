@@ -7,44 +7,20 @@ import icon1 from "./assets/Visao.png";
 import icon2 from "./assets/Valor.png";
 import icon3 from "./assets/Missao.png";
 import {
-  FaArrowRight,
-  FaArrowLeft,
+ 
   FaPhoneAlt,
   FaMapMarkerAlt,
 } from "react-icons/fa";
 import Rever from "./Api";
 
+import {Index,Grid,Sobre}  from "./utils/Utils";
+
+
 function App() {
-  const scrolltrolador = useRef(null);
-  const [pscrollLeft, setScrollleft] = useState(false);
-  const [pscrollright, setScrollright] = useState(true);
-
-  //funcao para actualizar os  estados do butao
-  function updateButton() {
-    const scrollcontainer = scrolltrolador.current;
-    if (scrollcontainer) {
-      setScrollleft(scrollcontainer.scrollLeft > 0);
-      setScrollright(
-        scrollcontainer.scrollLeft + scrollcontainer.offsetWidth <
-          scrollcontainer.scrollWidth
-      );
-    }
-  }
-
-  //funcao para actualizar os  estados do butao
-  function scroll(direction) {
-    const scrollcontainer = scrolltrolador.current;
-    if (scrollcontainer) {
-      const scrollcont = direction == "left" ? -200 : 200;
-
-      scrollcontainer.scrollBy({ left: scrollcont, behavior: "smooth" });
-      setTimeout(updateButton, 300);
-    }
-  }
 
   return (
     <>
-      <nav  className="md:bg-blue-300  flex xs-min:flex-row  xs-min:bg-red-300 md:flex-row drop-shadow-md xl:bg-white sticky top-0 z-[1000]   sm:bg-green-300 lg:bg-zinc-400 2xl:bg-violet-800  md:h-[4.8rem] xs-min:h-[3.8rem] xl:h-[4.5rem] justify-between  overflow-hidden">
+      <nav className="md:bg-blue-300  flex xs-min:flex-row  xs-min:bg-red-300 md:flex-row drop-shadow-md xl:bg-white sticky top-0 z-[1000]   sm:bg-green-300 lg:bg-zinc-400 2xl:bg-violet-800  md:h-[4.8rem] xs-min:h-[3.8rem] xl:h-[4.5rem] justify-between  overflow-hidden">
         <div className="lg:pt-1 xs-min:pt-1  md:pt-0  xs-min:landscape:w-auto xs-min:landscape:h-auto pl-4  md:w-28 md:h-auto xs-min:w-24 xs-min:h-14 xl:w-28 xl:h-24 overflow-hidden">
           <img
             className=" xs-min:bg-white  xs-min:landscape:w-full xs-min:landscape:h-[100%]  xl:object-cover md:object-contain md:w-full md:h-[100%] xs-min:object-cover xs-min:w-[100%] xs-min:h-[100%] xl:w-[14vh] xl:h-[11vh] pt-0   mt-0"
@@ -70,7 +46,7 @@ function App() {
     xs-min:landscape:h-[120vh]  
     xs-min:landscape:bg-[url('./assets/figma.png')]
 
-    md:bg-[url('./assets/figma.png')]
+    md:bg-none
     md:w-auto
   
     md:h-auto
@@ -102,7 +78,7 @@ function App() {
       xl:gap-12
       xl:items-start
       md:mt-0
-      md:pt-40
+      md:pt-50
       md:flex-col
       md:items-center
   
@@ -164,11 +140,12 @@ function App() {
         xs-min:text-[17px]
         xs-min:text-white
 
-        md:ml-2 
+        md:ml-1 
         md:w-[250px]
         md:text-2xl
         md:p-2
         md:text-center
+
         lg:max-w-2xl
         lg:w-[300px]
         lg:p-3
@@ -210,7 +187,7 @@ function App() {
           </span>
         </div>
       </div>
-    {/*fim  */}
+      {/*fim  */}
 
       {/* Valores da empresa */}
       <div className=" xs-min:-top-8 xs-min:z-[500]  flex  lg:flex-row   xs-min:pl-4 xs-min:pr-4 xs-min:flex-row   xl:flex-row relative xl:-top-4 xl:z-[500] justify-center content-center items-center">
@@ -268,398 +245,345 @@ function App() {
         </div>
       </div>
       {/*  */}
-
-      <Rever />
-      <Footer />
+      <Index/>
+      <Grid/>
+      {/* <Sobre /> */}
+      
+ 
     </>
   );
 }
 export default App;
 
-const Footer = () => {
-  return (
-    <>
-      <footer className=" overflow-hidden xs-min:pr-1 xs-min:pl-1 bg-slate-500 w-full sm:grid-cols-2 md:grid-cols-3 md:auto-cols-[250px] xs-min:grid-cols-2 xs-min:auto-cols-[150px] xs-min:place-items-center xl:h-[18rem] grid 2xl:grid-cols-3 2xl:auto-cols-[250px  xl:grid-cols-3 xl:auto-cols-[250px] xl:pt-0 pb-1  xl:pl-7 xl:pr-4">
-        <div className="w-full md:mt-0 ">
-          <h3 className=" md:text-xl relative md:-top-2 xl:pt-0 md:mt-0 md:p-0 md:text-start xs-min:text-sm xs-min:text-start  text-white font-bold xl:text-[1.8rem]">
-            Entre em contacto com a gente!
-          </h3>
 
-          <p className=" relative xl:pt-0 md:-top-2 md:text-sm xs-min:text-[12px] xs-min:text-start  text-black  xl:text-xl">
-            Entre em contacto com o Espelho Meu,
-            <br /> queremos tirar as duvidas, ouvir suas criticas e sugestoes
-          </p>
 
-          <span className=" relative md:-top-2 flex md:flex-row xs-min:flex-col md:pt-1 xl:flex-row gap-1  pb-4  ">
-            <FaPhoneAlt className=" xl:text-3xl md:text-sm xs-min:text-xl  text-white rounded-[50%] bg-blue-700 p-1 " />{" "}
-            <p className=" xl:text-xl md:text-[11px] xs-min:text-[12px]">
-              {" "}
-              (+244) 930-000-000{" "}
-            </p>
-            <FaMapMarkerAlt className=" xl:text-3xl md:text-sm xs-min:text-xl  text-white rounded-[50%] bg-blue-700 p-1 " />{" "}
-            <p className=" xl:text-xl md:text-[11px] xs-min:text-[12px]">
-              {" "}
-              R. da Maxinde iepa
-            </p>
-          </span>
-        </div>
+// const Carousel_1 = () => (
+//   <>
+//     <div className=" overflow-hidden  bg-white">
+//       <div className="  xs-min:pl-4 xs-min:pr-4 xl:pl-28 xl:pr-28 pb-5 ">
+//         <h6 className="text-center pb-2">Escolha pela marca</h6>
+//         <div className=" bg-[#e9f8f8be] flex flex-row gap-2 justify-center items-center">
+//           <a href="/">
+//             {" "}
+//             <Avatar size={70} src="../src/assets/picon.png" alt="icon" />
+//           </a>
+//           <a href="/">
+//             {" "}
+//             <img
+//               className="object-center object-contain w-full h-[90px]"
+//               src="../src/assets/picon2.png"
+//               alt="icon1"
+//             />
+//           </a>
+//         </div>
+//       </div>
 
-        <div className=" xs-min:hidden md:flex md:mt-16 md:flex-col xl:flex xl:flex-col xs-min:pt-16 xl:pt-36 xs-min:text-sm  ">
-          <p className="md:text-sm md:text-center  xl:text-sm">
-            © 2024 Eng. Silva - Todos os direitos reservados
-          </p>
-        </div>
+//       <div className=" xs-min:pl-4 xs-min:pr-4 xl:pl-28 xl:pr-28 pb-5">
+//         <div className="flex flex-col justify-center gap-1 pb-4">
+//           <h5 className="  animate-slider-direita duration-150 delay-300 xs-min:text-md font-bold xl:text-[1.8rem] text-start text-transparent bg-clip-text bg-gradient-to-r from-amber-500 from-[5%] to-[20%] to-red-500">
+//             01.Bem-Vindo
+//           </h5>
+//           <hr className=" xs-min:w-28 xl:w-44 bg-none xs-min:border-t-2   xl:border-t-4 border-orange-400" />
+//         </div>
 
-        <div className="  xs-min:items-center  flex flex-col xs-min:-top-8  xs-min:relative pt-0 xs-min:gap-2 xl:items-center ">
-          <h6 className="xl:pt-0 md:text-xl md:text-start sm:text-sm xs-min:text-center xs-min:text-sm xl:text-3xl text-white font-bold">
-            Reclamações
-          </h6>
-          <Input
-            className="xs-min:w-[10rem] 2xl:w-full md:w-52 xl:w-full sm:w-40"
-            width={12}
-            title="Input-rec"
-            placeholder="Reclamações ou sugestões"
-          />
-          <button className=" p-1 md:w-52 sm-w-40 xs-min:w-[10rem] 2xl:w-full xl:w-96 bg-blue-600 text-white rounded-xl">
-            Enviar
-          </button>
+//         <p className=" xs-min:text-md  2xl:text-[1.5rem] xl:text-[1.5rem] text-justify">
+//           Bem-vindo ao Salão Espelho Meu,onde sua beleza encontra o cuidado que
+//           omerece! No salão espelho meu, há 4 anos, transformanos confiança e
+//           estilo. Somos apaixonados por realçar a sua beleza e oferecer
+//           experiências únicas em manicure,pedicure,maquiagem e cuidados com os
+//           cabelos. Nossa missão é proporcionar um ambiente acolhedor, onde cada
+//           detalhe é pensado para fazer você se sentir especial e destacar o que
+//           ha de melhor em você.
+//         </p>
+//         {/* <p className="text-[0.8rem] text-center">Nossos trabalhos</p> */}
+//       </div>
 
-          <p className=" xl:hidden  xs-min:relative xs-min:top-12 xs-min:justify-self-end md:hidden xs-min:text-[12px] xs-min:text-center">
-            © 2024 Eng. Silva - Todos os direitos reservados
-          </p>
-        </div>
-      </footer>
-    </>
-  );
-};
-
-const Carousel_1 = () => (
-  <>
-    <div className=" overflow-hidden  bg-white">
-      <div className="  xs-min:pl-4 xs-min:pr-4 xl:pl-28 xl:pr-28 pb-5 ">
-        <h6 className="text-center pb-2">Escolha pela marca</h6>
-        <div className=" bg-[#e9f8f8be] flex flex-row gap-2 justify-center items-center">
-          <a href="/">
-            {" "}
-            <Avatar size={70} src="../src/assets/picon.png" alt="icon" />
-          </a>
-          <a href="/">
-            {" "}
-            <img
-              className="object-center object-contain w-full h-[90px]"
-              src="../src/assets/picon2.png"
-              alt="icon1"
-            />
-          </a>
-        </div>
-      </div>
-
-      <div className=" xs-min:pl-4 xs-min:pr-4 xl:pl-28 xl:pr-28 pb-5">
-        <div className="flex flex-col justify-center gap-1 pb-4">
-          <h5 className="  animate-slider-direita duration-150 delay-300 xs-min:text-md font-bold xl:text-[1.8rem] text-start text-transparent bg-clip-text bg-gradient-to-r from-amber-500 from-[5%] to-[20%] to-red-500">
-            01.Bem-Vindo
-          </h5>
-          <hr className=" xs-min:w-28 xl:w-44 bg-none xs-min:border-t-2   xl:border-t-4 border-orange-400" />
-        </div>
-
-        <p className=" xs-min:text-md  2xl:text-[1.5rem] xl:text-[1.5rem] text-justify">
-          Bem-vindo ao Salão Espelho Meu,onde sua beleza encontra o cuidado que
-          omerece! No salão espelho meu, há 4 anos, transformanos confiança e
-          estilo. Somos apaixonados por realçar a sua beleza e oferecer
-          experiências únicas em manicure,pedicure,maquiagem e cuidados com os
-          cabelos. Nossa missão é proporcionar um ambiente acolhedor, onde cada
-          detalhe é pensado para fazer você se sentir especial e destacar o que
-          ha de melhor em você.
-        </p>
-        {/* <p className="text-[0.8rem] text-center">Nossos trabalhos</p> */}
-      </div>
-
-      {/* Ver depois */}
-      <div className=" xs-min:pl-4 xs-min:pr-4   overflow-x-auto  w-full pt-0 h-[24rem] xl:pl-28 xl:pr-28   scroll-smooth ">
-        <div
-          ref={scrolltrolador}
-          onScroll={updateButton}
-          className=" 
+//       {/* Ver depois */}
+//       <div className=" xs-min:pl-4 xs-min:pr-4   overflow-x-auto  w-full pt-0 h-[24rem] xl:pl-28 xl:pr-28   scroll-smooth ">
+//         <div
+//           ref={scrolltrolador}
+//           onScroll={updateButton}
+//           className=" 
      
-xs-min:grid xs-min:overflow-y-hidden xs-min:overflow-x-hidden 
-xs-min:grid-flow-col
-xs-min:auto-cols-[250px]
-xs-min:gap-2
-xs-min:pb-4
+// xs-min:grid xs-min:overflow-y-hidden xs-min:overflow-x-hidden 
+// xs-min:grid-flow-col
+// xs-min:auto-cols-[250px]
+// xs-min:gap-2
+// xs-min:pb-4
 
 
-        xl:grid 
-        xl:overflow-y-hidden
-        xl:overflow-x-hidden
-        xl:auto-cols-[350px]
-        xl:grid-flow-col 
-        xl:place-items-center
-        xl:gap-7
-        xl:pb-4
-        "
-        >
-          <div
-            className=" 
-              border-[2px] border-amber-400
-            bg-[url('./assets/Tranca1.png')]
-            bg-cover
-            bg-center
-            bg-no-repeat  
-          -min:w-80 xs-min:h-[20rem]    
-            xl:w-[60vh] xl:h-[20rem] bg-zinc-900 "
-          >
-            01
-          </div>
+//         xl:grid 
+//         xl:overflow-y-hidden
+//         xl:overflow-x-hidden
+//         xl:auto-cols-[350px]
+//         xl:grid-flow-col 
+//         xl:place-items-center
+//         xl:gap-7
+//         xl:pb-4
+//         "
+//         >
+//           <div
+//             className=" 
+//               border-[2px] border-amber-400
+//             bg-[url('./assets/Tranca1.png')]
+//             bg-cover
+//             bg-center
+//             bg-no-repeat  
+//           -min:w-80 xs-min:h-[20rem]    
+//             xl:w-[60vh] xl:h-[20rem] bg-zinc-900 "
+//           >
+//             01
+//           </div>
 
-          <div
-            className=" 
-               border-[2px] border-amber-400
-             bg-[url('./assets/Tranca2.png')]
-            bg-cover
-            bg-center
-            bg-no-repeat 
-         xl:w-[60vh] xl:h-[20rem] bg-red-500"
-          >
-            02
-          </div>
-          <div
-            className="  
-               border-[2px] border-amber-400
-             bg-[url('./assets/Tranca3.png')]
-            bg-cover
-            bg-center
-            bg-no-repeat 
-        xl:w-[60vh] xl:h-[20rem] bg-blue-500"
-          >
-            03
-          </div>
+//           <div
+//             className=" 
+//                border-[2px] border-amber-400
+//              bg-[url('./assets/Tranca2.png')]
+//             bg-cover
+//             bg-center
+//             bg-no-repeat 
+//          xl:w-[60vh] xl:h-[20rem] bg-red-500"
+//           >
+//             02
+//           </div>
+//           <div
+//             className="  
+//                border-[2px] border-amber-400
+//              bg-[url('./assets/Tranca3.png')]
+//             bg-cover
+//             bg-center
+//             bg-no-repeat 
+//         xl:w-[60vh] xl:h-[20rem] bg-blue-500"
+//           >
+//             03
+//           </div>
 
-          <div className="  border-[2px] border-amber-400 xl:w-[60vh] xl:h-[20rem] bg-white">
-            04
-          </div>
+//           <div className="  border-[2px] border-amber-400 xl:w-[60vh] xl:h-[20rem] bg-white">
+//             04
+//           </div>
 
-          <div className=" border-[2px] border-amber-400 xl:w-[60vh] xl:h-[20rem] bg-white">
-            05
-          </div>
-        </div>
+//           <div className=" border-[2px] border-amber-400 xl:w-[60vh] xl:h-[20rem] bg-white">
+//             05
+//           </div>
+//         </div>
 
-        <button
-          onClick={() => scroll("left")}
-          disabled={!pscrollLeft}
-          className=" rounded-[50%] p-2 bg-gradient-to-r from-amber-500 from-[5%] to-[20%] to-red-500 hover:bg-violet-500 disabled:cursor-not-allowed mr-1"
-        >
-          <FaArrowLeft />
-        </button>
-        <button
-          onClick={() => scroll("right")}
-          disabled={!pscrollright}
-          className=" rounded-[50%] p-2 bg-gradient-to-r from-amber-500 from-[5%] to-[20%] to-red-500 hover:bg-violet-500 disabled:cursor-not-allowed"
-        >
-          <FaArrowRight />
-        </button>
-      </div>
+//         <button
+//           onClick={() => scroll("left")}
+//           disabled={!pscrollLeft}
+//           className=" rounded-[50%] p-2 bg-gradient-to-r from-amber-500 from-[5%] to-[20%] to-red-500 hover:bg-violet-500 disabled:cursor-not-allowed mr-1"
+//         >
+//           <FaArrowLeft />
+//         </button>
+//         <button
+//           onClick={() => scroll("right")}
+//           disabled={!pscrollright}
+//           className=" rounded-[50%] p-2 bg-gradient-to-r from-amber-500 from-[5%] to-[20%] to-red-500 hover:bg-violet-500 disabled:cursor-not-allowed"
+//         >
+//           <FaArrowRight />
+//         </button>
+//       </div>
 
-      {/* Grid  sobre nos */}
-      <div className=" xs-min:pl-4 xs-min:pr-4 overflow-hidden w-full xl:pl-28 xl:pr-28">
-        <div className="flex flex-col justify-center gap-1">
-          <h6 className=" font-bold xs-min:text-md xl:text-[1.8rem] text-start text-transparent bg-clip-text bg-gradient-to-r from-amber-500 from-[5%] to-[20%] to-red-500">
-            03.Sobre Nós
-          </h6>
-          <hr className="xs-min:w-28 xl:w-44 bg-none border-t-4 border-t-orange-400" />
-        </div>
-        <div className="grid place-items-center grid-cols-2 auto-cols-auto gap-1 ">
-          <div className=" xs-min:h-[22rem] w-full xl:h-[24rem]">
-            <p className="xs-min:text-sm   text-black text-justify pt-22   block xl:text-[1.5rem] ms-0 me-0 ">
-              No coração de Malanje, Espelho Meu é um salão que brilha não só
-              pelo luxo, mas pelo talento incrível da nossa equipa. Oferecemos
-              serviços que vão desde cortes clássicos até penteados ousados,
-              sempre com o toque personalizado que só o Espelho Meu pode
-              oferecer.
-              <br /> Venha conhecer o lugar onde cada cliente é tratado como uma
-              obra de arte, refletindo a verdadeira essência da beleza. Afinal,
-              quem é a mais bela do reino?
-            </p>
-          </div>
-          <div className="  w-full xs-min:h-[18rem] xl:h-[24rem]">
-            <div className="flex w-full pt-0 flex-row gap-1 relative z-0">
-              <div className=" xs-min:w-full xs-min:h-[10rem]  bg-no-repeat bg-cover bg-center bg-[url('./assets/icon1.jpg')]  relative rounded-md z-1 xl:-top-2  xl:left-60  xl:w-full xl:h-[10rem] bg-violet-800">
-                <h6 className="text-center relative top-[-28px] text-black ">
-                  Fé
-                </h6>
-              </div>
-              <div className=" xs-min:w-full xs-min:h-[10rem] bg-no-repeat bg-cover bg-center bg-[url('./assets/icon2.png')] relative rounded-md z-2 xl:top-[184px] xl:left-14 right-[60px]  xl:w-full xl:h-[11rem] bg-slate-500">
-                <h6 className="text-center relative top-[-28px] text-black">
-                  Foco
-                </h6>
-              </div>
-              <div className=" xs-min:w-full xs-min:h-[10rem] bg-no-repeat bg-cover bg-center bg-[url('./assets/icon3.png')] relative rounded-md z-3 xl:top-20 xl:-left-1 right-20  xl:w-full xl:h-[12rem] bg-neutral-500">
-                <h6 className="text-center relative top-[-28px] text-black">
-                  Trabalho
-                </h6>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
+//       {/* Grid  sobre nos */}
+//       <div className=" xs-min:pl-4 xs-min:pr-4 overflow-hidden w-full xl:pl-28 xl:pr-28">
+//         <div className="flex flex-col justify-center gap-1">
+//           <h6 className=" font-bold xs-min:text-md xl:text-[1.8rem] text-start text-transparent bg-clip-text bg-gradient-to-r from-amber-500 from-[5%] to-[20%] to-red-500">
+//             03.Sobre Nós
+//           </h6>
+//           <hr className="xs-min:w-28 xl:w-44 bg-none border-t-4 border-t-orange-400" />
+//         </div>
+//         <div className="grid place-items-center grid-cols-2 auto-cols-auto gap-1 ">
+//           <div className=" xs-min:h-[22rem] w-full xl:h-[24rem]">
+//             <p className="xs-min:text-sm   text-black text-justify pt-22   block xl:text-[1.5rem] ms-0 me-0 ">
+//               No coração de Malanje, Espelho Meu é um salão que brilha não só
+//               pelo luxo, mas pelo talento incrível da nossa equipa. Oferecemos
+//               serviços que vão desde cortes clássicos até penteados ousados,
+//               sempre com o toque personalizado que só o Espelho Meu pode
+//               oferecer.
+//               <br /> Venha conhecer o lugar onde cada cliente é tratado como uma
+//               obra de arte, refletindo a verdadeira essência da beleza. Afinal,
+//               quem é a mais bela do reino?
+//             </p>
+//           </div>
+//           <div className="  w-full xs-min:h-[18rem] xl:h-[24rem]">
+//             <div className="flex w-full pt-0 flex-row gap-1 relative z-0">
+//               <div className=" xs-min:w-full xs-min:h-[10rem]  bg-no-repeat bg-cover bg-center bg-[url('./assets/icon1.jpg')]  relative rounded-md z-1 xl:-top-2  xl:left-60  xl:w-full xl:h-[10rem] bg-violet-800">
+//                 <h6 className="text-center relative top-[-28px] text-black ">
+//                   Fé
+//                 </h6>
+//               </div>
+//               <div className=" xs-min:w-full xs-min:h-[10rem] bg-no-repeat bg-cover bg-center bg-[url('./assets/icon2.png')] relative rounded-md z-2 xl:top-[184px] xl:left-14 right-[60px]  xl:w-full xl:h-[11rem] bg-slate-500">
+//                 <h6 className="text-center relative top-[-28px] text-black">
+//                   Foco
+//                 </h6>
+//               </div>
+//               <div className=" xs-min:w-full xs-min:h-[10rem] bg-no-repeat bg-cover bg-center bg-[url('./assets/icon3.png')] relative rounded-md z-3 xl:top-20 xl:-left-1 right-20  xl:w-full xl:h-[12rem] bg-neutral-500">
+//                 <h6 className="text-center relative top-[-28px] text-black">
+//                   Trabalho
+//                 </h6>
+//               </div>
+//             </div>
+//           </div>
+//         </div>
+//       </div>
 
-      {/* Servicos */}
+//       {/* Servicos */}
 
-      <div className=" w-full overflow-hidden h-[26rem] bg-zinc-100 xl:pl-28 xl:pr-28">
-        <div className="flex flex-col justify-center  gap-1">
-          <h6 className=" font-bold text-[1.8rem] text-start text-transparent bg-clip-text bg-gradient-to-r from-amber-500 from-[5%] to-[20%] to-red-500">
-            04.Serviços
-          </h6>
-          <hr className=" w-44 bg-none border-t-4 border-t-orange-400" />
-        </div>
+//       <div className=" w-full overflow-hidden h-[26rem] bg-zinc-100 xl:pl-28 xl:pr-28">
+//         <div className="flex flex-col justify-center  gap-1">
+//           <h6 className=" font-bold text-[1.8rem] text-start text-transparent bg-clip-text bg-gradient-to-r from-amber-500 from-[5%] to-[20%] to-red-500">
+//             04.Serviços
+//           </h6>
+//           <hr className=" w-44 bg-none border-t-4 border-t-orange-400" />
+//         </div>
 
-        <div className="flex flex-row  pt-4 gap-3 justify-center items-center">
-          <div className=" border-b-2 border-orange-400 flex flex-col rounded-sm w-full h-[55vh] relative overflow-hidden group cursor-pointer">
-            {/* <!-- Fundo do Card (Imagem) --> */}
+//         <div className="flex flex-row  pt-4 gap-3 justify-center items-center">
+//           <div className=" border-b-2 border-orange-400 flex flex-col rounded-sm w-full h-[55vh] relative overflow-hidden group cursor-pointer">
+//             {/* <!-- Fundo do Card (Imagem) --> */}
 
-            <img
-              src="../src/assets/cabelo.jpg"
-              alt="Imagem do Card"
-              className="  object-cover transform transition-transform duration-300 ease-in-out group-active:scale-110 group-hover:scale-105"
-            />
+//             <img
+//               src="../src/assets/cabelo.jpg"
+//               alt="Imagem do Card"
+//               className="  object-cover transform transition-transform duration-300 ease-in-out group-active:scale-110 group-hover:scale-105"
+//             />
 
-            {/* <!-- Cabeleiro Conteúdo do Card --> */}
+//             {/* <!-- Cabeleiro Conteúdo do Card --> */}
 
-            <div className="relative -top-24 pl-4">
-              <h6 className="text-[1.7rem] text-start text-transparent bg-clip-text bg-gradient-to-r from-amber-500 from-[5%] to-[20%] to-red-500 font-bold">
-                Cabeleiro
-              </h6>
-              <p className="text-white">
-                Transforme seu visual, realce sua beleza.
-              </p>
-            </div>
-          </div>
+//             <div className="relative -top-24 pl-4">
+//               <h6 className="text-[1.7rem] text-start text-transparent bg-clip-text bg-gradient-to-r from-amber-500 from-[5%] to-[20%] to-red-500 font-bold">
+//                 Cabeleiro
+//               </h6>
+//               <p className="text-white">
+//                 Transforme seu visual, realce sua beleza.
+//               </p>
+//             </div>
+//           </div>
 
-          <div className=" flex flex-col border-b-2 border-orange-400 rounded-sm w-full h-[55vh] relative overflow-hidden group cursor-pointer">
-            {/* <!-- Fundo do Card (Imagem) --> */}
-            <img
-              src="../src/assets/unhas1.jpg"
-              alt="Imagem do Card"
-              className=" object-cover transform transition-transform duration-300 ease-in-out group-active:scale-110 group-hover:scale-105"
-            />
+//           <div className=" flex flex-col border-b-2 border-orange-400 rounded-sm w-full h-[55vh] relative overflow-hidden group cursor-pointer">
+//             {/* <!-- Fundo do Card (Imagem) --> */}
+//             <img
+//               src="../src/assets/unhas1.jpg"
+//               alt="Imagem do Card"
+//               className=" object-cover transform transition-transform duration-300 ease-in-out group-active:scale-110 group-hover:scale-105"
+//             />
 
-            {/* <!-- Manicure Conteúdo do Card --> */}
+//             {/* <!-- Manicure Conteúdo do Card --> */}
 
-            <div className="relative -top-40 pl-4">
-              <h6 className="text-[1.7rem] text-start text-transparent bg-clip-text bg-gradient-to-r from-amber-500 from-[5%] to-[20%] to-red-500 font-bold">
-                Manicure
-              </h6>
-              <p className="text-white">
-                Unhas impecáveis, confiança inabalável.
-              </p>
-            </div>
-          </div>
+//             <div className="relative -top-40 pl-4">
+//               <h6 className="text-[1.7rem] text-start text-transparent bg-clip-text bg-gradient-to-r from-amber-500 from-[5%] to-[20%] to-red-500 font-bold">
+//                 Manicure
+//               </h6>
+//               <p className="text-white">
+//                 Unhas impecáveis, confiança inabalável.
+//               </p>
+//             </div>
+//           </div>
 
-          <div className=" border-b-2 border-orange-400 flex flex-col bg-black rounded-sm w-full h-[55vh] relative overflow-hidden group cursor-pointer">
-            {/* <!-- Fundo do Card (Imagem) --> */}
-            <img
-              src="../src/assets/unhas1.jpg"
-              alt="Imagem do Card"
-              className=" object-cover object-bottom w-full h-[55vh] transform transition-transform duration-300 ease-in-out group-active:scale-110 group-hover:scale-105"
-            />
+//           <div className=" border-b-2 border-orange-400 flex flex-col bg-black rounded-sm w-full h-[55vh] relative overflow-hidden group cursor-pointer">
+//             {/* <!-- Fundo do Card (Imagem) --> */}
+//             <img
+//               src="../src/assets/unhas1.jpg"
+//               alt="Imagem do Card"
+//               className=" object-cover object-bottom w-full h-[55vh] transform transition-transform duration-300 ease-in-out group-active:scale-110 group-hover:scale-105"
+//             />
 
-            {/* <!-- Penicure Conteúdo do Card --> */}
+//             {/* <!-- Penicure Conteúdo do Card --> */}
 
-            <div className="relative -top-24 pl-4">
-              <h6 className="text-[1.7rem] text-start text-transparent bg-clip-text bg-gradient-to-r from-amber-500 from-[5%] to-[20%] to-red-500 font-bold">
-                Pedicure
-              </h6>
-              <p className="text-white">
-                Unhas impecáveis, confiança inabalável.
-              </p>
-            </div>
-          </div>
+//             <div className="relative -top-24 pl-4">
+//               <h6 className="text-[1.7rem] text-start text-transparent bg-clip-text bg-gradient-to-r from-amber-500 from-[5%] to-[20%] to-red-500 font-bold">
+//                 Pedicure
+//               </h6>
+//               <p className="text-white">
+//                 Unhas impecáveis, confiança inabalável.
+//               </p>
+//             </div>
+//           </div>
 
-          <div className=" border-b-2 border-orange-400 flex flex-col rounded-sm w-full h-[55vh] relative overflow-hidden group cursor-pointer">
-            {/* <!-- Fundo do Card (Imagem) --> */}
-            <img
-              src="../src/assets/makeup.png"
-              alt="Imagem do Card"
-              className=" object-cover w-full h-[55vh] transform transition-transform duration-300 ease-in-out group-active:scale-110 group-hover:scale-105"
-            />
+//           <div className=" border-b-2 border-orange-400 flex flex-col rounded-sm w-full h-[55vh] relative overflow-hidden group cursor-pointer">
+//             {/* <!-- Fundo do Card (Imagem) --> */}
+//             <img
+//               src="../src/assets/makeup.png"
+//               alt="Imagem do Card"
+//               className=" object-cover w-full h-[55vh] transform transition-transform duration-300 ease-in-out group-active:scale-110 group-hover:scale-105"
+//             />
 
-            {/* <!-- Makeup Conteúdo do Card --> */}
-            <div className="relative -top-24 pl-4">
-              <h6 className="text-[1.7rem] text-start text-transparent bg-clip-text bg-gradient-to-r from-amber-500 from-[5%] to-[20%] to-red-500 font-bold">
-                Makeup
-              </h6>
-              <p className="text-white">
-                Belesa impecáveis, confiança inabalável.
-              </p>
-            </div>
-          </div>
-        </div>
-      </div>
+//             {/* <!-- Makeup Conteúdo do Card --> */}
+//             <div className="relative -top-24 pl-4">
+//               <h6 className="text-[1.7rem] text-start text-transparent bg-clip-text bg-gradient-to-r from-amber-500 from-[5%] to-[20%] to-red-500 font-bold">
+//                 Makeup
+//               </h6>
+//               <p className="text-white">
+//                 Belesa impecáveis, confiança inabalável.
+//               </p>
+//             </div>
+//           </div>
+//         </div>
+//       </div>
 
-      {/* Nossa equipe */}
+//       {/* Nossa equipe */}
 
-      <div className=" w-full overflow-hidden h-[34rem] bg-zinc-100 xl:pl-28 xl:pr-28">
-        <div className="flex flex-col justify-center  gap-1">
-          <h6 className=" font-bold text-[1.8rem] text-start text-transparent bg-clip-text bg-gradient-to-r from-amber-500 from-[5%] to-[20%] to-red-500">
-            05.Nossa Equipe
-          </h6>
-          <hr className=" w-44 bg-none border-t-4 border-t-orange-400" />
-        </div>
+//       <div className=" w-full overflow-hidden h-[34rem] bg-zinc-100 xl:pl-28 xl:pr-28">
+//         <div className="flex flex-col justify-center  gap-1">
+//           <h6 className=" font-bold text-[1.8rem] text-start text-transparent bg-clip-text bg-gradient-to-r from-amber-500 from-[5%] to-[20%] to-red-500">
+//             05.Nossa Equipe
+//           </h6>
+//           <hr className=" w-44 bg-none border-t-4 border-t-orange-400" />
+//         </div>
 
-        <div className="flex pt-4 flex-row gap-1 justify-center items-center">
-          {/* 1 */}
-          <div className=" border-b-2 border-orange-400 flex flex-col rounded-sm w-full h-[58vh] relative overflow-hidden group cursor-pointer">
-            <h6 className="text-black text-[16.5px] font-semibold">
-              {" "}
-              Ana Silva
-            </h6>
-            <img
-              className="object-contain w-full h-[130vh]"
-              src="../src/assets/pessoa.png"
-              alt="pessoa 1"
-            />
-            <p className="text-black text-[16px]">Cabeleira Profissional</p>
-          </div>
-          {/* 2 */}
-          <div className=" border-b-2 border-orange-400 flex flex-col rounded-sm w-full h-[58vh] relative overflow-hidden group cursor-pointer">
-            <h6 className="text-black text-[16.5px] font-semibold">
-              {" "}
-              Teresa Kaluvi
-            </h6>
-            <img
-              className="object-contain w-full h-[130vh]"
-              src="../src/assets/pessoa.png"
-              alt="pessoa 1"
-            />
-            <p className="text-black text-[16px]">Makeup Senior</p>
-          </div>
-          {/* 3 */}
-          <div className=" border-b-2 border-orange-400 flex flex-col rounded-sm w-full h-[58vh] relative overflow-hidden group cursor-pointer">
-            <h6 className="text-black text-[16.5px] font-semibold">
-              {" "}
-              Gemima Bastos
-            </h6>
-            <img
-              className="object-contain w-full h-[130vh]"
-              src="../src/assets/pessoa.png"
-              alt="pessoa 1"
-            />
-            <p className="text-black text-[16px]">Manicure Junior</p>
-          </div>
-          {/* 4 */}
-          <div className=" border-b-2 border-orange-400 flex flex-col rounded-sm w-full h-[58vh] relative overflow-hidden group cursor-pointer">
-            <h6 className="text-black text-[16.5px] font-semibold">
-              {" "}
-              Adelia Silva
-            </h6>
-            <img
-              className="object-contain w-full h-[130vh]"
-              src="../src/assets/pessoa.png"
-              alt="pessoa 1"
-            />
-            <p className="text-black text-[16px]">Pedicure Senior</p>
-          </div>
-        </div>
-      </div>
-    </div>
-  </>
-);
+//         <div className="flex pt-4 flex-row gap-1 justify-center items-center">
+//           {/* 1 */}
+//           <div className=" border-b-2 border-orange-400 flex flex-col rounded-sm w-full h-[58vh] relative overflow-hidden group cursor-pointer">
+//             <h6 className="text-black text-[16.5px] font-semibold">
+//               {" "}
+//               Ana Silva
+//             </h6>
+//             <img
+//               className="object-contain w-full h-[130vh]"
+//               src="../src/assets/pessoa.png"
+//               alt="pessoa 1"
+//             />
+//             <p className="text-black text-[16px]">Cabeleira Profissional</p>
+//           </div>
+//           {/* 2 */}
+//           <div className=" border-b-2 border-orange-400 flex flex-col rounded-sm w-full h-[58vh] relative overflow-hidden group cursor-pointer">
+//             <h6 className="text-black text-[16.5px] font-semibold">
+//               {" "}
+//               Teresa Kaluvi
+//             </h6>
+//             <img
+//               className="object-contain w-full h-[130vh]"
+//               src="../src/assets/pessoa.png"
+//               alt="pessoa 1"
+//             />
+//             <p className="text-black text-[16px]">Makeup Senior</p>
+//           </div>
+//           {/* 3 */}
+//           <div className=" border-b-2 border-orange-400 flex flex-col rounded-sm w-full h-[58vh] relative overflow-hidden group cursor-pointer">
+//             <h6 className="text-black text-[16.5px] font-semibold">
+//               {" "}
+//               Gemima Bastos
+//             </h6>
+//             <img
+//               className="object-contain w-full h-[130vh]"
+//               src="../src/assets/pessoa.png"
+//               alt="pessoa 1"
+//             />
+//             <p className="text-black text-[16px]">Manicure Junior</p>
+//           </div>
+//           {/* 4 */}
+//           <div className=" border-b-2 border-orange-400 flex flex-col rounded-sm w-full h-[58vh] relative overflow-hidden group cursor-pointer">
+//             <h6 className="text-black text-[16.5px] font-semibold">
+//               {" "}
+//               Adelia Silva
+//             </h6>
+//             <img
+//               className="object-contain w-full h-[130vh]"
+//               src="../src/assets/pessoa.png"
+//               alt="pessoa 1"
+//             />
+//             <p className="text-black text-[16px]">Pedicure Senior</p>
+//           </div>
+//         </div>
+//       </div>
+//     </div>
+//   </>
+// );
