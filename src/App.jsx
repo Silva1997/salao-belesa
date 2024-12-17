@@ -13,6 +13,7 @@ function App() {
     <Index />
     <Grid/>
     <Sobre />
+
   </div>
   );
 }
