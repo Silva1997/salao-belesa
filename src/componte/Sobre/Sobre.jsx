@@ -22,8 +22,8 @@ export default function Sobre() {
             <hr className="md:mb-4 xs-min:w-28 md:border-t-4 md:w-44 xl:w-44 bg-none xs-min:border-t-4 xl:border-t-4 border-orange-400" />
           </div>
           {/*  */}
-          <div className="grid sm:gap-2  sm:grid-cols-2 landscape:grid-rows-[90vh_90vh] sm:auto-cols-[200px]    md:gap-4 xs-min:gap-2  md:auto-cols-[200px]  md:grid-rows-[37vh_37vh] xs-min:grid-cols-2 md:grid-cols-2 xs-min:grid-rows-[35vh_35vh] xl:grid-rows-auto   xl:grid-cols-4 xl:auto-cols-[200px] xl:gap-4 pt-5 pb-5">
-            <div className=" sm:h-[100%] md: max-h-[90%] md:min-h-96 md:bg-slate-400      border-b-2  border-orange-400   flex flex-col rounded-sm w-full xl:h-[27rem] xl:relative overflow-hidden group cursor-pointer">
+          <div className="grid sm:gap-2  sm:grid-cols-2 landscape:grid-rows-[90vh_90vh] sm:auto-cols-[200px]    md:gap-4 xs-min:gap-2  md:auto-cols-[200px]  md:grid-rows-1 xs-min:grid-cols-2 md:grid-cols-2 xs-min:grid-rows-[35vh_35vh] xl:grid-rows-auto   xl:grid-cols-4 xl:auto-cols-[200px] xl:gap-4 pt-5 pb-5">
+            <div className=" sm:h-[100%] md: md:max-h-[30rem] md:min-h-[30rem]      border-b-2  border-orange-400   flex flex-col rounded-sm w-full xl:h-[27rem] xl:relative overflow-hidden group cursor-pointer">
               {/* <!-- Fundo do Card (Imagem) --> */}
 
               <img
@@ -44,7 +44,7 @@ export default function Sobre() {
               </div>
             </div>
 
-            <div className=" sm:h-[100%] md:min-h-96   md: max-h-[90%] md:bg-violet-400     flex flex-col  border-b-2 border-orange-400 rounded-sm w-full xl:h-[27rem] relative overflow-hidden group cursor-pointer">
+            <div className=" sm:h-[100%] md:min-h-[30rem]   md:max-h-[30rem]     flex flex-col  border-b-2 border-orange-400 rounded-sm w-full xl:h-[27rem] relative overflow-hidden group cursor-pointer">
               {/* <!-- Fundo do Card (Imagem) --> */}
               <img
                    src={unhas}
@@ -64,7 +64,7 @@ export default function Sobre() {
               </div>
             </div>
 
-            <div className=" sm:h-[100%] md:min-h-96  md: max-h-[90%] md:bg-red-400      border-b-2 border-orange-400 flex flex-col  rounded-sm w-full xl:h-[27rem] relative overflow-hidden group cursor-pointer">
+            <div className=" sm:h-[100%] md:min-h-[30rem]  md: md:max-h-[30rem]      border-b-2 border-orange-400 flex flex-col  rounded-sm w-full xl:h-[27rem] relative overflow-hidden group cursor-pointer">
               {/* <!-- Fundo do Card (Imagem) --> */}
               <img
                 src={unhas}
@@ -84,7 +84,7 @@ export default function Sobre() {
               </div>
             </div>
 
-            <div className=" sm:h-[100%] md:min-h-96   md: max-h-[90%]    border-b-2 border-orange-400 flex flex-col rounded-sm w-full xl:h-[27rem] relative  overflow-hidden group cursor-pointer">
+            <div className=" sm:h-[100%] md:min-h-[30rem]   md: md:max-h-[30rem]    border-b-2 border-orange-400 flex flex-col rounded-sm w-full xl:h-[27rem] relative  overflow-hidden group cursor-pointer">
               {/* <!-- Fundo do Card (Imagem) --> */}
               <img
                 src={makeup}

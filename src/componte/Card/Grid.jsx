@@ -36,7 +36,7 @@ export default function Grid() {
     <div
       ref={scrolltrolador}
       onScroll={updateButton}
-      className="lg:bg-black md:p-2  md:grid md:grid-flow-col md:grid-rows-auto  md:gap-2 md:place-items-center xs-min:grid  xs-min:grid-flow-col md:auto-cols-[480px] xs-min:auto-cols-[250px] xs-min:gap-2 xs-min:pb-4
+      className="lg:bg-black md:p-2  md:grid md:grid-flow-col md:grid-rows-1  md:gap-2 md:place-items-center xs-min:grid  xs-min:grid-flow-col md:auto-cols-[480px] xs-min:auto-cols-[250px] xs-min:gap-2 xs-min:pb-4
             xl:grid overflow-y-hidden overflow-x-hidden xl:auto-cols-[400px] xl:grid-flow-col xl:place-items-center xl:gap-7 xl:pb-4"
     >
       <div className="border-[2px] border-amber-400 bg-[url('./assets/Tranca1.png')] bg-cover bg-center bg-no-repeat -min:w-80 md:w-[30rem]  md:h-[30rem] xs-min:h-[20rem] xl:w-[60vh] xl:h-[27rem] bg-zinc-900">
