@@ -18,7 +18,7 @@ export default function Index() {
             <hr className=" md:border-t-4 md:w-44 xs-min:w-28 xl:w-44 bg-none xs-min:border-t-4 xl:border-t-4 border-orange-400" />
           </div>
 
-          <p className="md:text-[1.7rem] xs-min:text-[1.08rem]  2xl:text-[1.5rem] xl:text-[1.5rem] text-justify">
+          <p className="md:text-[1.7rem] lg:text-[1.2rem] xs-min:text-[1.08rem]  2xl:text-[1.5rem] xl:text-[1.8rem] text-justify">
             Bem-vindo ao Salão Espelho Meu, onde sua beleza encontra o cuidado
             que merece! No salão Espelho Meu, há 4 anos, transformamos confiança
             e estilo. Somos apaixonados por realçar a sua beleza e oferecer
