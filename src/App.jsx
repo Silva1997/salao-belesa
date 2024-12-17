@@ -14,7 +14,7 @@ import { Index, Grid, Sobre } from "./utils/Utils";
 function App() {
   return (
     <>
-      <nav className="md:bg-blue-300  flex xs-min:flex-row  xs-min:bg-red-300 md:flex-row drop-shadow-md xl:bg-white sticky top-0 z-[1000]   sm:bg-green-300 lg:bg-zinc-400 2xl:bg-violet-800  md:h-[4.8rem] xs-min:h-[3.8rem] xl:h-[4.5rem] justify-between  overflow-hidden">
+      <nav className="md:bg-blue-300  flex xs-min:flex-row  xs-min:bg-white md:flex-row drop-shadow-md xl:bg-white sticky top-0 z-[1000]   sm:bg-green-300 lg:bg-zinc-400 2xl:bg-violet-800  md:h-[4.8rem] xs-min:h-[3.8rem] xl:h-[4.5rem] justify-between  overflow-hidden">
         <div className="lg:pt-1 xs-min:pt-1  md:pt-0  xs-min:landscape:w-auto xs-min:landscape:h-auto pl-4  md:w-28 md:h-auto xs-min:w-24 xs-min:h-14 xl:w-28 xl:h-24 overflow-hidden">
           <img
             className=" xs-min:bg-white  xs-min:landscape:w-full xs-min:landscape:h-[100%]  xl:object-cover md:object-contain md:w-full md:h-[100%] xs-min:object-cover xs-min:w-[100%] xs-min:h-[100%] xl:w-[14vh] xl:h-[11vh] pt-0   mt-0"
@@ -34,23 +34,36 @@ function App() {
       */}
       <div
         className=" 
+
     xs-min:bg-center
     xs-min:w-full 
-    xs-min:landscape:bg-center 
-    xs-min:landscape:w-[100%] 
-    xs-min:landscape:bg-cover 
-    xs-min:portrait:bg-cover 
+    
+    xs-min:bg-cover 
     xs-min:bg-[url('./assets/fundo.png')]
- 
-md:grid
-md:grid-cols-1
-md:auto-cols-[250px]
-md:grid-rows-[25rem_25rem]
-md:place-items-center
+    xs-min:h-[30rem]
+
+    landscape:w-[100%] 
+    landscape:bg-cover 
+     landscape:h-[55rem]
+    landscape:bg-center 
+    landscape:bg-[url('./assets/media.png')]
+
+    sm:w-full
+    sm:h-[44vh]
+    
+
+    md:grid
+    md:grid-cols-1
+    md:auto-cols-[250px]
+    md:grid-rows-[25rem_25rem]
+    md:place-items-center
 
     md:bg-[url('./assets/media.png')]
     md:w-full  
-    md:bg-contain
+    md:bg-cover
+    md:h-auto
+
+
  
     overflow-hidden
   
@@ -81,13 +94,18 @@ md:place-items-center
       xl:items-start
 
 
-    landscape:hidden
+    landscape:flex-col
+    landscape:items-center
+    landscape:gap-1
+    landscape:relative
+   landscape:top-[22rem]
+    landscape:p-10
      
 
       md:mt-0
       md:pt-0
       md:relative
-      md:top-[25rem]
+      md:top-[24rem]
       md:p-10
       md:flex-col
       md:items-center
@@ -109,19 +127,30 @@ md:place-items-center
         >
           <h6
             className="
-            md:ml-0
-        md:text-[1.7rem]
-        md:leading-10
-        md:text-transparent bg-clip-text bg-gradient-to-r from-red-300 from-[48%] to-[100%] to-orange-300
 
         xs-min:text-[1.32rem]
         xs-min:leading-5
-        md:font-extrabold
         xs-min:text-white
         xs-min:font-bold
 
+        md:ml-0
+        md:text-[1.7rem]
+        md:font-extrabold
+        md:leading-10
+        md:text-transparent bg-clip-text bg-gradient-to-r from-red-300 from-[48%] to-[100%] to-orange-300
 
+        landscape:text-[1.7rem]
+        landscape:text-transparent 
+        landscape:bg-clip-text 
+        landscape:bg-gradient-to-r 
+      landscape:from-red-300 
+        landscape:from-[48%] 
+        landscape:to-[100%] 
+      landscape:to-orange-300
+        landscape:font-extrabold
+       
         font-sans 
+
         xl:font-semibold 
         xl:ml-24 
         xl:relative top-[12rem] 
@@ -207,18 +236,18 @@ md:place-items-center
       {/*fim  */}
 
       {/* Valores da empresa */}
-      <div className=" xs-min:-top-8 xs-min:z-[500]  flex  lg:flex-row   xs-min:pl-4 xs-min:pr-4 xs-min:flex-row   xl:flex-row relative xl:-top-4 xl:z-[500] justify-center content-center items-center">
-        <div className=" xs-min:landscape:w-[58vh] lg:w-[45vh] xs-min:w-[35vh] lg:h-[26rem] xs-min:h-[19rem]  drop-shadow-lg p-2 flex flex-col items-center bg-gradient-to-l from-white from-[99%] to-[1%] to-orange-400 xl:w-[40vh] rounded-s-md xl:h-[17rem]">
+      <div className=" xs-min:-top-8 xs-min:z-[500] sm:pl-4 sm:pr-4  flex  lg:flex-row   xs-min:pl-4 xs-min:pr-4 xs-min:flex-row   xl:flex-row relative xl:-top-4 xl:z-[500] justify-center content-center items-center">
+        <div className=" landscape:w-[58vh] lg:w-[45vh] xs-min:w-[35vh] lg:h-[26rem] xs-min:h-[19rem]  drop-shadow-lg p-2 flex flex-col items-center bg-gradient-to-l from-white from-[99%] to-[1%] to-orange-400 xl:w-[40vh] rounded-s-md xl:h-[17rem]">
           <img
-            className="object-center  lg-min:w-[40px] lg:w-[40px] xs-min:w-[20px] md:w-[35px] md:h-[35px] xs-min:h-[20px] xl:w-[40px]  xl:h-[40px] p-0 m-0 rounded-[50%] "
+            className="object-center  landscape:w-[40px] landscape:h-[40px] lg-min:w-[40px] lg:w-[40px] xs-min:w-[20px] md:w-[35px] md:h-[35px] xs-min:h-[20px] xl:w-[40px]  xl:h-[40px] p-0 m-0 rounded-[50%] "
             src={icon1}
             alt="Valor"
           />
 
-          <h6 className="lg:text-xl md:text-base xs-min:text-sm xl:text-[1.1rem] text-center">
+          <h6 className="  landscape:text-xl  lg:text-xl md:text-base xs-min:text-sm xl:text-[1.1rem] text-center">
             Visão
           </h6>
-          <p className=" lg:leading-5 lg:text-[1.58rem] md:text-start md:leading-4 md:pb-3 md:text-[1.22rem] md:tracking-[0px] xs-min:text-start xs-min:leading-[14px] xs-min:text-[12px] xs-min:tracking-[-1px] xl:text-[13px] xl:text-justify xl:-tracking-tighter ">
+          <p className=" landscape:text-[1.03rem] landscape:leading-5  lg:leading-5 lg:text-[1.58rem] md:text-start md:leading-4 md:pb-3 md:text-[1.22rem] md:tracking-[0px] xs-min:text-start xs-min:leading-[14px] xs-min:text-[12px] xs-min:tracking-[-1px] xl:text-[13px] xl:text-justify xl:-tracking-tighter ">
             Ser referência em atendimento e qualidade no mercado de beleza,
             proporcionando uma experiência transformadora e inovadora para
             nossos clientes. Buscamos ser reconhecidos pela excelência,
@@ -227,16 +256,16 @@ md:place-items-center
           </p>
         </div>
 
-        <div className=" xs-min:landscape:w-[58vh]  lg:w-[45vh] lg:h-[26rem]  xs-min:w-[35vh] xs-min:h-[19rem]   drop-shadow-lg flex p-2 flex-col items-center bg-gradient-to-r from-slate-500 to-slate-800 xl:w-[40vh] text-white  xl:h-[17rem]">
+        <div className="  landscape:w-[58vh]  lg:w-[45vh] lg:h-[26rem]  xs-min:w-[35vh] xs-min:h-[19rem]   drop-shadow-lg flex p-2 flex-col items-center bg-gradient-to-r from-slate-500 to-slate-800 xl:w-[40vh] text-white  xl:h-[17rem]">
           <img
-            className=" lg-min:w-[40px] lg:w-[40px]  md:w-[35px] md:h-[35px]  xs-min:w-[20px] xs-min:h-[20px] object-center xl:w-[40px]  xl:h-[40px] pt-0 m-0 rounded-[50%] "
+            className=" landscape:w-[40px] landscape:h-[40px]  lg-min:w-[40px] lg:w-[40px]  md:w-[35px] md:h-[35px]  xs-min:w-[20px] xs-min:h-[20px] object-center xl:w-[40px]  xl:h-[40px] pt-0 m-0 rounded-[50%] "
             src={icon3}
             alt="Valor"
           />
 
-          <h6 className=" lg:text-xl md:text-base  xs-min:text-sm xl:text-[1.1rem] text-center">
+          <h6 className="  landscape:text-xl  lg:text-xl md:text-base  xs-min:text-sm xl:text-[1.1rem] text-center">
             Missão
-            <p className=" lg:text-[1.56rem]  lg:leading-6 md:text-start md:leading-4 md:pb-3 md:text-[1.26rem] md:tracking-[0px] xs-min:text-start xs-min:leading-[16px] xs-min:text-[12px] xs-min:tracking-[-1px] xl:text-[13px] xl:text-justify xl:-tracking-wide ">
+            <p className=" landscape:text-[1.03rem] landscape:leading-5 lg:text-[1.56rem]  lg:leading-6 md:text-start md:leading-4 md:pb-3 md:text-[1.26rem] md:tracking-[0px] xs-min:text-start xs-min:leading-[16px] xs-min:text-[12px] xs-min:tracking-[-1px] xl:text-[13px] xl:text-justify xl:-tracking-wide ">
               Proporcionar aos nossos clientes um serviço de beleza único e
               personalizado, combinando expertise, qualidade e inovação. Nosso
               compromisso é valorizar a autoestima e o bem-estar de cada pessoa,
@@ -244,17 +273,17 @@ md:place-items-center
             </p>
           </h6>
         </div>
-        <div className=" xs-min:landscape:w-[58vh] lg:w-[45vh] lg:h-[26rem]   xs-min:w-[35vh] xs-min:h-[19rem]   drop-shadow-lg flex flex-col p-2 items-center shadow-zinc-800 bg-gradient-to-r from-white from-[99%] to-[1%] to-orange-400 xl:w-[40vh] rounded-e-md xl:h-[17rem]">
+        <div className=" landscape:w-[58vh] lg:w-[45vh] lg:h-[26rem]   xs-min:w-[35vh] xs-min:h-[19rem]   drop-shadow-lg flex flex-col p-2 items-center shadow-zinc-800 bg-gradient-to-r from-white from-[99%] to-[1%] to-orange-400 xl:w-[40vh] rounded-e-md xl:h-[17rem]">
           <img
-            className=" lg-min:w-[40px] lg:w-[40px] md:w-[38px] md:h-[38px] xs-min:w-[20px] xs-min:h-[20px] object-center xl:w-[40px]  xl:h-[40px] pt-0 m-0 rounded-[50%] "
+            className=" landscape:w-[40px] landscape:h-[40px] lg-min:w-[40px] lg:w-[40px] md:w-[38px] md:h-[38px] xs-min:w-[20px] xs-min:h-[20px] object-center xl:w-[40px]  xl:h-[40px] pt-0 m-0 rounded-[50%] "
             src={icon2}
             alt="Valor"
           />
 
-          <h6 className=" lg:text-xl md:text-base xs-min:text-sm xl:text-[1.1rem] text-center">
+          <h6 className=" landscape:text-xl lg:text-xl md:text-base xs-min:text-sm xl:text-[1.1rem] text-center">
             Valor
           </h6>
-          <p className=" lg:text-[1.56rem]  lg:leading-6  md:text-start md:leading-4 md:pb-3 md:text-[1.22rem] md:tracking-[0px] xs-min:text-start xs-min:leading-[14px] xs-min:text-[14px] xs-min:tracking-[-1px] xl:text-[13px] xl:text-justify xl:-tracking-tighter ">
+        <p className=" landscape:text-[1.03rem] landscape:leading-5 lg:text-[1.56rem]  lg:leading-6  md:text-start md:leading-4 md:pb-3 md:text-[1.22rem] md:tracking-[0px] xs-min:text-start xs-min:leading-[14px] xs-min:text-[14px] xs-min:tracking-[-1px] xl:text-[13px] xl:text-justify xl:-tracking-tighter ">
             Qualidade: Oferecer serviços com o mais alto padrão de excelência.
             Inovação: Estar sempre à frente das tendências, trazendo novas
             técnicas e tratamentos para nossos clientes.
