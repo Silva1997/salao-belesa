@@ -1,7 +1,8 @@
 
 import "./index.css";
 import Rotas from './componte/Rotas/Rotas'
-import { Nav,Index,Grid,Valores,Sobre } from "./utils/Utils";
+import { Nav,Index,Grid,Valores,Sobre, About,Footer } from "./utils/Utils";
+
 
 function App() {
   return (
@@ -12,8 +13,9 @@ function App() {
     <Valores />
     <Index />
     <Grid/>
+    <About/>
     <Sobre />
-
+    <Footer/>
   </div>
   );
 }

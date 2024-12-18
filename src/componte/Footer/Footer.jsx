@@ -5,7 +5,7 @@ import {FaPhoneAlt, FaMapMarkerAlt } from "react-icons/fa";
 const Footer = () => {
     return (
       <>
-        <footer className=" overflow-hidden xs-min:pr-1 xs-min:pl-1 bg-slate-500 w-full sm:grid-cols-2 md:grid-cols-3 md:auto-cols-[250px] xs-min:grid-cols-2 xs-min:auto-cols-[150px] xs-min:place-items-center xl:h-[18rem] grid 2xl:grid-cols-3 2xl:auto-cols-[250px  xl:grid-cols-3 xl:auto-cols-[250px] xl:pt-0 pb-1  xl:pl-7 xl:pr-4">
+        <footer className=" overflow-hidden xs-min:pr-1 xs-min:pl-1 bg-slate-400 w-full sm:grid-cols-2 md:grid-cols-3  lg:h-auto md:h-auto md:auto-cols-[250px] xs-min:grid-cols-2 xs-min:auto-cols-[150px] xs-min:place-items-center xl:h-[18rem] grid 2xl:grid-cols-3 2xl:auto-cols-[250px  xl:grid-cols-3 xl:auto-cols-[250px] xl:pt-0 pb-1  xl:pl-7 xl:pr-4">
           <div className="w-full md:mt-0 ">
             <h3 className=" md:text-xl relative md:-top-2 xl:pt-0 md:mt-0 md:p-0 md:text-start xs-min:text-sm xs-min:text-start  text-white font-bold xl:text-[1.8rem]">
               Entre em contacto com a gente!

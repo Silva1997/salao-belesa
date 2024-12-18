@@ -64,14 +64,17 @@ bg-gray-950
       <div
         className=" 
   flex 
- 
+ xs-min:shadow-current
+ xs-min:blur-0
   xl:pt-1
   xs-min:flex-col  
   xs-min:w-full 
-  xs-min:gap-6 
+  xs-min:gap-2 
   xs-min:pl-3
   xs-min:items-center
-  xs-min:pt-56
+  xs-min:relative
+  xs-min:p-1
+  xs-min:top-72
 
 
   sm:text-sm  
@@ -80,7 +83,7 @@ bg-gray-950
   md:mt-0
   md:pt-0
   md:relative
-  md:top-[29.2rem]
+  md:top-[29.9rem]
   md:p-10
   md:flex-col
   md:items-center
@@ -119,7 +122,7 @@ xl:top-56
     md:leading-10
     md:text-transparent bg-clip-text bg-gradient-to-r from-red-300 from-[48%] to-[100%] to-orange-300
 
-    landscape:text-[1.7rem]
+    landscape:text-[1.77rem]
     landscape:text-transparent 
     landscape:bg-clip-text 
     landscape:bg-gradient-to-r 
@@ -130,21 +133,20 @@ xl:top-56
     landscape:font-extrabold
    
     font-sans 
-
     xl:font-semibold 
     xl:ml-2
- 
-    xl:text-[25px]
     xl:leading-10
     xs-min:border-l-4
     xl:border-l-4
 
+    xl:text-white
     lg:text-white
+
     lg:font-bold
     lg:text-4xl
     lg:border-l-8
     border-l-amber-500 xs-min:pl-1 
-    xl:pl-2 xl:text-white "
+    xl:pl-2  "
         >
           Salão de beleza Espelho Meu <br />
           Por detrás de cada cliente, <br className="xl:hidden" /> a excelência
@@ -191,13 +193,14 @@ xl:top-56
     flex flex-row 
     xl:gap-2
     xs-min:gap-1
+    xs-min:relative 
+    xs-min:top-3
     text-white
 
     md:ml-0
-      md:mr-6
+    md:mr-6
     lg:gap-2
-    xs-min:relative 
-    xs-min:top-4
+  
     xl:ml-24 
  "
         >

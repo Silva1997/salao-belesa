@@ -28,7 +28,7 @@ function App() {
     <>
 
 <nav
-        className="md:bg-blue-300  flex xs-min:flex-row 
+        className="md:bg-white flex xs-min:flex-row 
     xs-min:bg-white md:flex-row drop-shadow-md xl:bg-white 
     sticky top-0 z-[1000]   
     sm:bg-green-300 lg:bg-zinc-400 2xl:bg-violet-800 

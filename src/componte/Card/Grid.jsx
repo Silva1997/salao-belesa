@@ -32,11 +32,11 @@ export default function Grid() {
 
   return (
     // {/* Grid de Imagens */}
-    <div className="overflow-hidden md:mb-4 xs-min:pl-4 xs-min:pr-4 md:h-auto overflow-x-auto w-full pt-0 h-[26rem] xl:pl-28 xl:pr-28 scroll-smooth">
+    <div className="overflow-hidden md:mb-4 xs-min:pl-4 xs-min:pr-4 md:h-auto overflow-x-auto w-full pt-0 xs-min:h-auto h-auto xs-min:mb-4 xl:h-[33rem] xl:pl-28 xl:pr-28 scroll-smooth">
     <div
       ref={scrolltrolador}
       onScroll={updateButton}
-      className="lg:bg-black md:p-2  md:grid md:grid-flow-col md:grid-rows-1  md:gap-2 md:place-items-center xs-min:grid  xs-min:grid-flow-col md:auto-cols-[480px] xs-min:auto-cols-[250px] xs-min:gap-2 xs-min:pb-4
+      className=" md:p-2  md:grid md:grid-flow-col md:grid-rows-1  md:gap-2 md:place-items-center xs-min:grid  xs-min:grid-flow-col md:auto-cols-[480px] xs-min:auto-cols-[250px] xs-min:gap-2 xs-min:pb-4
             xl:grid overflow-y-hidden overflow-x-hidden xl:auto-cols-[400px] xl:grid-flow-col xl:place-items-center xl:gap-7 xl:pb-4"
     >
       <div className="border-[2px] border-amber-400 bg-[url('./assets/Tranca1.png')] bg-cover bg-center bg-no-repeat -min:w-80 md:w-[30rem]  md:h-[30rem] xs-min:h-[20rem] xl:w-[60vh] xl:h-[27rem] bg-zinc-900">
