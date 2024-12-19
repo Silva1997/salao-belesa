@@ -27,7 +27,7 @@ md:place-items-center
 md:bg-[url('./assets/media.png')]
 md:w-full  
 md:bg-cover
-md:h-[60rem]
+md:h-[50rem]
 
 
 lg:w-full 
@@ -57,33 +57,46 @@ bg-no-repeat
 bg-gray-950
 "
     >
-    {/* 
+      {/* 
     
 
      */}
-      <div
-        className=" 
+      <div className="  
+      
+  xs-min:h-[22rem] 
+  xs-min:relative
+  xs-min:p-1
+  xs-min:top-72
+  md:relative
+
+  md:top-[30.9rem]
+  md:backdrop-brightness-95
+
+xl:relative
+xl:-top-56
+xl:-left-64
+  xs-min:backdrop-brightness-95">
+        <div
+          className=" 
   flex 
- xs-min:shadow-current
- xs-min:blur-0
-  xl:pt-1
+
+ xl:pt-1
   xs-min:flex-col  
   xs-min:w-full 
   xs-min:gap-2 
   xs-min:pl-3
   xs-min:items-center
-  xs-min:relative
-  xs-min:p-1
-  xs-min:top-72
+
 
 
   sm:text-sm  
   sm:top-[30rem]
 
+
   md:mt-0
   md:pt-0
-  md:relative
-  md:top-[29.9rem]
+  md:pr-24 md:pl-24
+
   md:p-10
   md:flex-col
   md:items-center
@@ -98,31 +111,32 @@ bg-gray-950
   landscape:relative
   landscape:p-10
 
-xl:relative
-xl:top-56
+
   xl:flex-col
   xl:gap-12
   xl:items-start
 
 
   
-  "  
-      >
-        <h6
-          className="
+  "
+        >
+          <h6
+            className="
 
     xs-min:text-[1.32rem]
     xs-min:leading-5
     xs-min:text-white
     xs-min:font-bold
 
+
     md:ml-0
-    md:text-[1.7rem]
+    md:text-[2rem]
     md:font-extrabold
     md:leading-10
-    md:text-transparent bg-clip-text bg-gradient-to-r from-red-300 from-[48%] to-[100%] to-orange-300
+    md:text-white
+    /* md:text-transparent bg-clip-text bg-gradient-to-r from-red-300 from-[48%] to-[100%] to-orange-300*/
 
-    landscape:text-[1.77rem]
+
     landscape:text-transparent 
     landscape:bg-clip-text 
     landscape:bg-gradient-to-r 
@@ -133,9 +147,10 @@ xl:top-56
     landscape:font-extrabold
    
     font-sans 
+    xl:text-xl
     xl:font-semibold 
     xl:ml-2
-    xl:leading-10
+    xl:leading-2
     xs-min:border-l-4
     xl:border-l-4
 
@@ -147,14 +162,14 @@ xl:top-56
     lg:border-l-8
     border-l-amber-500 xs-min:pl-1 
     xl:pl-2  "
-        >
-          Salão de beleza Espelho Meu <br />
-          Por detrás de cada cliente, <br className="xl:hidden" /> a excelência
-          no serviço
-        </h6>
+          >
+            Salão de beleza Espelho Meu <br />
+            Por detrás de cada cliente, <br className="xl:hidden" /> a
+            excelência no serviço
+          </h6>
 
-        <button
-          className=" 
+          <button
+            className=" 
  
     hover:bg-transparent
     hover:border-[2px] border-amber-500
@@ -183,18 +198,18 @@ xl:top-56
     bg-blue-500
     xl:text-white 
     xl:p-2 rounded-[12px]"
-        >
-          Agendamento
-        </button>
+          >
+            Agendamento
+          </button>
 
-        <span
-          className=" 
-
+          <span
+            className=" 
     flex flex-row 
     xl:gap-2
     xs-min:gap-1
     xs-min:relative 
     xs-min:top-3
+xs-min:text-center
     text-white
 
     md:ml-0
@@ -203,17 +218,18 @@ xl:top-56
   
     xl:ml-24 
  "
-        >
-          <FaMapMarkerAlt className=" lg:text-3xl xs-min:text-[18px] bg-blue-500 hover:bg-transparent hover:border-2 border-orange-400 rounded-[50%] p-1 cursor-pointer  xl:text-2xl" />{" "}
-          <p className=" lg:text-2xl xs-min:text-[13px]   xl:text-[1.2rem]">
-            Malanje-Maxinde{" "}
-          </p>
-          <FaPhoneAlt className=" lg:text-3xl xs-min:text-[18px] hover:bg-transparent hover:border-2 border-orange-400   bg-blue-500 rounded-[50%]  cursor-pointer p-1 xl:text-2xl" />{" "}
-          <p className="lg:text-2xl xs-min:text-[13px]   xl:text-[1.2rem]">
-            {" "}
-            92013000{" "}
-          </p>
-        </span>
+          >
+            <FaMapMarkerAlt className=" lg:text-3xl xs-min:text-[18px] bg-blue-500 hover:bg-transparent hover:border-2 border-orange-400 rounded-[50%] p-1 cursor-pointer  xl:text-2xl" />{" "}
+            <p className=" lg:text-2xl xs-min:text-[13px]   xl:text-[1.2rem]">
+              Malanje-Maxinde{" "}
+            </p>
+            <FaPhoneAlt className=" lg:text-3xl xs-min:text-[18px] hover:bg-transparent hover:border-2 border-orange-400   bg-blue-500 rounded-[50%]  cursor-pointer p-1 xl:text-2xl" />{" "}
+            <p className="lg:text-2xl xs-min:text-[13px]   xl:text-[1.2rem]">
+              {" "}
+              92013000{" "}
+            </p>
+          </span>
+        </div>
       </div>
     </div>
   );

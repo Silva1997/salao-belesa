@@ -32,7 +32,7 @@ export default function Grid() {
 
   return (
     // {/* Grid de Imagens */}
-    <div className="overflow-hidden md:mb-4 xs-min:pl-4 xs-min:pr-4 md:h-auto overflow-x-auto w-full pt-0 xs-min:h-auto h-auto xs-min:mb-4 xl:h-[33rem] xl:pl-28 xl:pr-28 scroll-smooth">
+    <div className=" md:pr-16 md:pl-16 overflow-hidden md:mb-4 xs-min:pl-4 xs-min:pr-4 md:h-auto overflow-x-auto w-full pt-0 xs-min:h-auto h-auto xs-min:mb-4 xl:h-[33rem] xl:pl-28 xl:pr-28 scroll-smooth">
     <div
       ref={scrolltrolador}
       onScroll={updateButton}

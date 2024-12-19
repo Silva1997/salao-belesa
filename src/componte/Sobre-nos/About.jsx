@@ -3,7 +3,7 @@ import { motion } from 'framer-motion';
 
 const About = () => {
     return (
-        <div className=" xs-min:mb-4 bg-blue-50 md:mb-4 xs-min:pl-4 xs-min:pr-4 xs-min:h-auto md:h-[44rem] xl:h-[33rem] overflow-hidden w-full xl:pl-28 xl:pr-28">
+        <div className=" md:pr-16 md:pl-16 md:pb-4 xs-min:mb-4 bg-blue-50 md:mb-4 xs-min:pl-4 xs-min:pr-4 xs-min:h-auto md:h-auto xl:h-[33rem] overflow-hidden w-full xl:pl-28 xl:pr-28">
         <div className="flex flex-col justify-center xl:gap-1 ">
           <motion.h5
             className="xl:pt-2  md:text-2xl xs-min:text-[1.08rem] font-bold xl:text-[1.8rem] 2xl:text-[2rem] text-start text-transparent bg-clip-text bg-gradient-to-r from-amber-500 from-[5%] to-[20%] to-red-500"
@@ -17,7 +17,7 @@ const About = () => {
         </div>
 
 
-        <div className="grid   md:pt-0 md:auto-rows-auto   place-items-center xs-min:auto-rows-auto grid-cols-2 auto-cols-auto xl:gap-8 xs-min:gap-1 ">
+        <div className="grid  md:gap-1  md:pt-0 md:auto-rows-auto   place-items-center xs-min:auto-rows-auto grid-cols-2 auto-cols-auto xl:gap-8 xs-min:gap-4 ">
          
           <div className="xs-min:h-auto md:h-auto w-full xl:h-[24rem]">
             <p className=" md:pt-0 xs-min:text-[1.11rem] md:text-[1.7rem] xs-min:-tracking-[1px] text-black xl:pt-2 text-justify lg:pt-22 block xl:text-[1.7rem] ms-0 me-0">
@@ -32,8 +32,8 @@ const About = () => {
             </p>
           </div>
 
-          <div className="w-full xs-min:p-1  md:h-auto  xs-min:h-auto xl:h-[24rem]">
-            <div className=" flex xs-min:pt-4  xs-min:justify-center xs-min:items-center md:relative  md:left-0 md:top-0 xl:top-0  w-full xl:pt-5  xs-min:flex-col md:flex-col xl:flex-row xs-min:gap-6  md:gap-6 xl:gap-1 xl:relative z-0">
+          <div className="  w-full xs-min:p-1  md:h-auto  xs-min:h-auto xl:h-[24rem]">
+            <div className=" flex xs-min:pt-4  xs-min:justify-center xs-min:items-center md:relative  md:left-[2.80rem] md:top-0 xl:top-0  w-full xl:pt-5  xs-min:flex-col md:flex-col xl:flex-row xs-min:gap-6  md:gap-6 xl:gap-1 xl:relative z-0">
             
               <div className="xs-min:w-40 xs-min:h-36 bg-no-repeat  bg-center bg-[url('./assets/icon1.jpg')] md:min-h-[12rem] xl:relative  rounded-md md:w-60 z-1 bg-cover xl:-top-6  xl:left-60 xl:w-full xl:h-[11rem] bg-white">
                 <h6 className="text-center xs-min:text-sm relative top-[-28px] text-black">

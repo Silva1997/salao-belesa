@@ -5,7 +5,7 @@ import { motion } from "framer-motion";
 export default function Index() {
   return (
         // {/* Bem-Vindo */}
-        <div className="xs-min:pl-4 xs-min:pr-4 xl:pl-28 xl:pr-28 mb-5">
+        <div className=" md:pr-16 md:pl-16 xs-min:pl-4 xs-min:pr-4 xl:pl-28 xl:pr-28 mb-5">
           <div className="flex flex-col justify-center gap-1 pb-4">
             <motion.h5
               className="md:text-3xl xs-min:text-md font-bold xl:text-[1.8rem] 2xl:text-[2rem] text-start text-transparent bg-clip-text bg-gradient-to-r from-amber-500 from-[5%] to-[20%] to-red-500"

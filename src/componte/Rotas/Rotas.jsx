@@ -1,6 +1,7 @@
 
 
 import logo from "../../assets/logo.png";
+import Menus from '../Gaveta/Drawer'
 import { TiThMenu } from "react-icons/ti";
 import { Routes, BrowserRouter, Route, Outlet} from "react-router-dom";
 
@@ -42,10 +43,11 @@ function App() {
             alt="icon"
           />
         </div>
-        <button className="text-white  pr-4">
+        <Menus TiThMenu={TiThMenu}/>
+        {/* <button className="text-white  pr-4">
         
       <TiThMenu className="text-green-500 lg:text-[3.5rem] md:text-[3rem]  xs-min:text-[1.8rem]    xl:text-[2.5rem]" />
-        </button>
+        </button> */}
       </nav>
     
    
