@@ -26,7 +26,7 @@ export default {
         'lg': '1024px',
         'xl': '1280px',
         '2xl': '1536px',
-         "tablet":{min:'800px', max:'980px'}  //800 a 900px
+         "tablet":{min:'800px', max:'1023px'}  //800 a 900px
      
       }
     },

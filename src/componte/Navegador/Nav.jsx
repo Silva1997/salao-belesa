@@ -36,9 +36,11 @@ md:bg-[url('./assets/media.png')]
 md:w-full  
 md:bg-cover
 md:h-[50rem]
+
 landscape:tablet:h-[60rem]
 landscape:tablet:bg-center
-
+portrait:tablet:bg-center
+portrait:tablet:h-[60rem]
 
 lg:w-full 
 lg:bg-left-bottom
@@ -89,6 +91,8 @@ xl:-left-64
 landscape:tablet:relative
 landscape:tablet:top-[3rem]
 landscape:tablet:backdrop-brightness-95
+portrait:tablet:relative
+portrait:tablet:top-[35rem]
   xs-min:backdrop-brightness-95">
         <div
           className=" 
