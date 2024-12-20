@@ -2,6 +2,14 @@ import { FaPhoneAlt, FaMapMarkerAlt } from "react-icons/fa";
 
 export default function Fundo() {
   return (
+
+  //   landscape:text-transparent 
+  //   landscape:bg-clip-text 
+  //   landscape:bg-gradient-to-r 
+  // landscape:from-red-300 
+  //   landscape:from-[48%] 
+  //   landscape:to-[100%] 
+  // landscape:to-orange-300
     <div
       className=" 
 
@@ -28,6 +36,8 @@ md:bg-[url('./assets/media.png')]
 md:w-full  
 md:bg-cover
 md:h-[50rem]
+landscape:tablet:h-[60rem]
+landscape:tablet:bg-center
 
 
 lg:w-full 
@@ -75,6 +85,10 @@ bg-gray-950
 xl:relative
 xl:-top-56
 xl:-left-64
+
+landscape:tablet:relative
+landscape:tablet:top-[3rem]
+landscape:tablet:backdrop-brightness-95
   xs-min:backdrop-brightness-95">
         <div
           className=" 
@@ -86,8 +100,9 @@ xl:-left-64
   xs-min:gap-2 
   xs-min:pl-3
   xs-min:items-center
+  
 
-
+landscape:tablet:flex-col
 
   sm:text-sm  
   sm:top-[30rem]
@@ -136,14 +151,7 @@ xl:-left-64
     md:text-white
     /* md:text-transparent bg-clip-text bg-gradient-to-r from-red-300 from-[48%] to-[100%] to-orange-300*/
 
-
-    landscape:text-transparent 
-    landscape:bg-clip-text 
-    landscape:bg-gradient-to-r 
-  landscape:from-red-300 
-    landscape:from-[48%] 
-    landscape:to-[100%] 
-  landscape:to-orange-300
+  landscape:tablet:text-white
     landscape:font-extrabold
    
     font-sans 

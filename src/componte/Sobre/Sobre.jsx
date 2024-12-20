@@ -53,7 +53,7 @@ export default function Sobre() {
             <img
               src={unhas}
               alt="Imagem do Card"
-              className=" sm:object-center  sm:w-full sm:object-fill sm:h-full md:object-center md:h-[24.6rem] md:object-cover md-w-full xl:h-[27rem] xs-min:object-cover  xs-min:object-center  xl:object-fill xs-min:h-[100%] transform transition-transform duration-300 ease-in-out group-active:scale-110 group-hover:scale-105"
+              className=" landscape:tablet:h-[26.4rem] sm:object-center  sm:w-full sm:object-fill sm:h-full md:object-center md:h-[24.6rem] md:object-cover md-w-full xl:h-[27rem] xs-min:object-cover  xs-min:object-center  xl:object-fill xs-min:h-[100%] transform transition-transform duration-300 ease-in-out group-active:scale-110 group-hover:scale-105"
             />
 
             {/* <!-- Manicure Conteúdo do Card --> */}
@@ -73,7 +73,7 @@ export default function Sobre() {
             <img
               src={unhas}
               alt="Imagem do Card"
-              className="  md:h-[24.8rem] xs-min:object-cover sm:object-center sm:w-full sm:object-fill sm:h-full  md:object-center md:object-cover md:w-full  xl:object-fill xs-min:h-[100%] xl:object-bottom xl:w-full xl:h-[27rem] transform transition-transform duration-300 ease-in-out group-active:scale-110 group-hover:scale-105"
+              className=" landscape:tablet:h-[26.4rem]  md:h-[24.8rem] xs-min:object-cover sm:object-center sm:w-full sm:object-fill sm:h-full  md:object-center md:object-cover md:w-full  xl:object-fill xs-min:h-[100%] xl:object-bottom xl:w-full xl:h-[27rem] transform transition-transform duration-300 ease-in-out group-active:scale-110 group-hover:scale-105"
             />
 
             {/* <!-- Penicure Conteúdo do Card --> */}
@@ -93,7 +93,7 @@ export default function Sobre() {
             <img
               src={makeup}
               alt="Imagem do Card"
-              className=" sm:object-center sm:w-full sm:object-fill sm:h-full  md:object-center md:object-cover md:w-full  md:h-[24.8rem]  xl:h-[27rem] xs-min:object-cover xl:object-fill xs-min:h-[100%] w-full transform transition-transform duration-300 ease-in-out group-active:scale-110 group-hover:scale-105"
+              className=" landscape:tablet:h-[26.4rem] sm:object-center sm:w-full sm:object-fill sm:h-full  md:object-center md:object-cover md:w-full  md:h-[24.8rem]  xl:h-[27rem] xs-min:object-cover xl:object-fill xs-min:h-[100%] w-full transform transition-transform duration-300 ease-in-out group-active:scale-110 group-hover:scale-105"
             />
 
             {/* <!-- Makeup Conteúdo do Card --> */}

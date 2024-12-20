@@ -20,7 +20,7 @@ const About = () => {
         <div className="grid  md:gap-1  md:pt-0 md:auto-rows-auto   place-items-center xs-min:auto-rows-auto grid-cols-2 auto-cols-auto xl:gap-8 xs-min:gap-4 ">
          
           <div className="xs-min:h-auto md:h-auto w-full xl:h-[24rem]">
-            <p className=" md:pt-0 xs-min:text-[1.11rem] md:text-[1.7rem] xs-min:-tracking-[1px] text-black xl:pt-2 text-justify lg:pt-22 block xl:text-[1.7rem] ms-0 me-0">
+            <p className=" landscape:tablet:text-[1.8rem] md:pt-0 xs-min:text-[1.11rem] md:text-[1.7rem] xs-min:-tracking-[1px] text-black xl:pt-2 text-justify lg:pt-22 block xl:text-[1.7rem] ms-0 me-0">
               No coração de Malanje, Espelho Meu é um salão que brilha não só
               pelo luxo, mas pelo talento incrível da nossa equipa. Oferecemos
               serviços que vão desde cortes clássicos até penteados ousados,
@@ -33,7 +33,7 @@ const About = () => {
           </div>
 
           <div className="  w-full xs-min:p-1  md:h-auto  xs-min:h-auto xl:h-[24rem]">
-            <div className=" flex xs-min:pt-4  xs-min:justify-center xs-min:items-center md:relative  md:left-[2.80rem] md:top-0 xl:top-0  w-full xl:pt-5  xs-min:flex-col md:flex-col xl:flex-row xs-min:gap-6  md:gap-6 xl:gap-1 xl:relative z-0">
+            <div className=" flex xs-min:pt-4  xs-min:justify-center xs-min:items-center md:relative landscape:tablet:relative landscape:tablet:left-[5rem] md:left-[2.80rem] md:top-0 xl:top-0  w-full xl:pt-5  xs-min:flex-col md:flex-col xl:flex-row xs-min:gap-6  md:gap-6 xl:gap-1 xl:relative z-0">
             
               <div className="xs-min:w-40 xs-min:h-36 bg-no-repeat  bg-center bg-[url('./assets/icon1.jpg')] md:min-h-[12rem] xl:relative  rounded-md md:w-60 z-1 bg-cover xl:-top-6  xl:left-60 xl:w-full xl:h-[11rem] bg-white">
                 <h6 className="text-center xs-min:text-sm relative top-[-28px] text-black">

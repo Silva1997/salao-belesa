@@ -21,11 +21,12 @@ export default {
       screens: {
         // Definindo um intervalo customizado para 360px a 414px
         'xs-min': '360px', // A partir de 360px
-         'sm':'648px',
+        'sm':'648px',
         'md': '768px',  // A partir de 768px
         'lg': '1024px',
         'xl': '1280px',
         '2xl': '1536px',
+         "tablet":{min:'800px', max:'980px'}  //800 a 900px
      
       }
     },
