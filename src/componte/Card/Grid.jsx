@@ -37,36 +37,36 @@ export default function Grid() {
       ref={scrolltrolador}
       onScroll={updateButton}
       className=" md:p-2  md:grid md:grid-flow-col md:grid-rows-1  md:gap-2 md:place-items-center xs-min:grid  xs-min:grid-flow-col md:auto-cols-[480px] xs-min:auto-cols-[250px] xs-min:gap-2 xs-min:pb-4
-            xl:grid overflow-y-hidden overflow-x-hidden xl:auto-cols-[400px] xl:grid-flow-col xl:place-items-center xl:gap-7 xl:pb-4"
+            xl:grid overflow-y-hidden overflow-x-hidden xl:auto-cols-[360px] xl:grid-flow-col xl:place-items-center xl:gap-5 xl:pb-4"
     >
-      <div className="border-[2px] border-amber-400 bg-[url('./assets/Tranca1.png')] bg-cover bg-center bg-no-repeat -min:w-80 md:w-[30rem]  md:h-[30rem] xs-min:h-[20rem] xl:w-[60vh] xl:h-[27rem] bg-zinc-900">
-        01
+      <div className="xs-min:rounded-md border-[2px] border-amber-400 bg-[url('./assets/Tranca1.png')] bg-cover bg-center bg-no-repeat -min:w-80 md:w-[30rem]  md:h-[30rem] xs-min:h-[20rem] xl:w-[60vh] xl:h-[27rem] bg-zinc-900">
+        {/* 01 */}
       </div>
-      <div className="border-[2px] border-amber-400 bg-[url('./assets/Tranca2.png')] bg-cover bg-center bg-no-repeat md:w-[30rem]  md:h-[30rem] xl:w-[60vh] xl:h-[27rem] bg-red-500">
-        02
+      <div className=" xs-min:rounded-md border-[2px] border-amber-400 bg-[url('./assets/Tranca2.png')] bg-cover bg-center bg-no-repeat md:w-[30rem]  md:h-[30rem] xl:w-[60vh] xl:h-[27rem] bg-red-500">
+        {/* 02 */}
       </div>
-      <div className="border-[2px] border-amber-400 bg-[url('./assets/Tranca3.png')] bg-cover bg-center bg-no-repeat  md:w-[30rem]  md:h-[30rem] xl:w-[60vh] xl:h-[27rem] bg-blue-500">
-        03
+      <div className=" xs-min:rounded-md border-[2px] border-amber-400 bg-[url('./assets/Tranca3.png')] bg-cover bg-center bg-no-repeat  md:w-[30rem]  md:h-[30rem] xl:w-[60vh] xl:h-[27rem] bg-blue-500">
+        {/* 03 */}
       </div>
-      <div className="border-[2px] border-amber-400 xl:w-[60vh] xl:h-[27rem] bg-white md:w-[30rem]  md:h-[30rem]">
-        04
+      <div className="xs-min:rounded-md border-[2px] border-amber-400 xl:w-[60vh] xl:h-[27rem] bg-white md:w-[30rem]  md:h-[30rem]">
+        {/* 04 */}
       </div>
-      <div className="border-[2px] border-amber-400 xl:w-[60vh] xl:h-[27rem] bg-white md:w-[30rem]  md:h-[30rem]">
-        05
+      <div className=" xs-min:rounded-md border-[2px] border-amber-400 xl:w-[60vh] xl:h-[27rem] bg-white md:w-[30rem]  md:h-[30rem]">
+        {/* 05 */}
       </div>
     </div>
 
     <button
       onClick={() => scroll("left")}
       disabled={!pscrollLeft}
-      className="md:mt-2 md:text-3xl xl:text-2xl rounded-[50%] p-2 bg-gradient-to-r from-amber-500 from-[5%] to-[20%] to-red-500 hover:bg-violet-500 disabled:cursor-not-allowed mr-1"
+      className="md:mt-2 text-white md:text-3xl xl:text-2xl rounded-[50%] p-2 bg-gradient-to-r from-amber-500 from-[5%] to-[20%] to-red-500 hover:bg-violet-500 disabled:cursor-not-allowed mr-1"
     >
       <FaArrowLeft />
     </button>
     <button
       onClick={() => scroll("right")}
       disabled={!pscrollright}
-      className=" md:mb-2 md:text-3xl xl:text-2xl rounded-[50%] p-2 bg-gradient-to-r from-amber-500 from-[5%] to-[20%] to-red-500 hover:bg-violet-500 disabled:cursor-not-allowed"
+      className=" md:mb-2 text-white md:text-3xl xl:text-2xl rounded-[50%] p-2 bg-gradient-to-r from-amber-500 from-[5%] to-[20%] to-red-500 hover:bg-violet-500 disabled:cursor-not-allowed"
     >
       <FaArrowRight />
     </button>

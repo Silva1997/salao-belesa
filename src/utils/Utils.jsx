@@ -6,9 +6,10 @@ import Nav from '../componte/Navegador/Nav'
 import Valores from '../componte/Valores/Valores'
 import About from '../componte/Sobre-nos/About'
 import Footer from '../componte/Footer/Footer'
+import Equipa from '../componte/Card/Equipa'
 
 export function Utils() {
-  return { Nav,Valores,Index ,Sobre,Grid,About,Footer} 
+  return { Nav,Valores,Equipa,Index ,Sobre,Grid,About,Footer} 
 }
 
-export {Nav,Valores,Index,Grid,Sobre,About,Footer}
+export {Nav,Valores,Equipa,Index,Grid,Sobre,About,Footer}

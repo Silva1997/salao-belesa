@@ -2,14 +2,13 @@ import { FaPhoneAlt, FaMapMarkerAlt } from "react-icons/fa";
 
 export default function Fundo() {
   return (
-
-  //   landscape:text-transparent 
-  //   landscape:bg-clip-text 
-  //   landscape:bg-gradient-to-r 
-  // landscape:from-red-300 
-  //   landscape:from-[48%] 
-  //   landscape:to-[100%] 
-  // landscape:to-orange-300
+    //   landscape:text-transparent
+    //   landscape:bg-clip-text
+    //   landscape:bg-gradient-to-r
+    // landscape:from-red-300
+    //   landscape:from-[48%]
+    //   landscape:to-[100%]
+    // landscape:to-orange-300
     <div
       className=" 
 
@@ -17,7 +16,7 @@ xs-min:bg-center
 xs-min:w-full 
 
 xs-min:bg-cover 
-xs-min:bg-[url('./assets/fundo.png')]
+xs-min:bg-[url('./assets/fundo1.jpg')]
 xs-min:h-[30rem]
 
 
@@ -71,14 +70,19 @@ bg-gray-950
     >
       {/* 
     
-
+ /* xs-min:h-[22rem] 
      */}
-      <div className="  
+      <div
+        className="  
       
-  xs-min:h-[22rem] 
+ 
+ 
   xs-min:relative
   xs-min:p-1
-  xs-min:top-72
+  xs-min:top-0
+  xs-min:h-[32rem]
+    xs-min:backdrop-brightness-50
+
   md:relative
 
   md:top-[30.9rem]
@@ -93,23 +97,25 @@ landscape:tablet:top-[3rem]
 landscape:tablet:backdrop-brightness-95
 portrait:tablet:relative
 portrait:tablet:top-[35rem]
-  xs-min:backdrop-brightness-95">
+"
+      >
         <div
           className=" 
-  flex 
-
- xl:pt-1
-  xs-min:flex-col  
-  xs-min:w-full 
-  xs-min:gap-2 
-  xs-min:pl-3
-  xs-min:items-center
+    flex 
+    xl:pt-1
+    xs-min:relative
+    xs-min:top-44
+    xs-min:flex-col  
+    xs-min:w-full 
+    xs-min:gap-2 
+    xs-min:pl-0
+    xs-min:items-center
   
 
-landscape:tablet:flex-col
+   landscape:tablet:flex-col
 
-  sm:text-sm  
-  sm:top-[30rem]
+   sm:text-sm  
+   sm:top-[30rem]
 
 
   md:mt-0
@@ -142,9 +148,10 @@ landscape:tablet:flex-col
           <h6
             className="
 
-    xs-min:text-[1.32rem]
+    xs-min:text-[1.28rem]
     xs-min:leading-5
     xs-min:text-white
+    
     xs-min:font-bold
 
 
@@ -180,15 +187,18 @@ landscape:tablet:flex-col
             excelência no serviço
           </h6>
 
-          <button
-            className=" 
- 
-    hover:bg-transparent
+{/*  hover:bg-transparent
     hover:border-[2px] border-amber-500
     hover:rounded-[12px]
+ */}
+          <button
+            className=" 
 
+    hover:border-[1px] 
+    hover:rounded-[12px]
+   xs-min:cursor-pointer
     xs-min:relative xs-min:top-2 xs-min:p-2
-    xs-min:w-[210px]
+    xs-min:w-[180px]
     xs-min:text-[17px]
     xs-min:text-white
 
@@ -207,7 +217,7 @@ landscape:tablet:flex-col
     xl:ml-24  
     xl:text-[19px] font-semibold xl:w-[19rem] 
     xl:h-12   
-    bg-blue-500
+    bg-violet-700
     xl:text-white 
     xl:p-2 rounded-[12px]"
           >
@@ -222,6 +232,7 @@ landscape:tablet:flex-col
     xs-min:relative 
     xs-min:top-3
 xs-min:text-center
+
     text-white
 
     md:ml-0
@@ -231,12 +242,12 @@ xs-min:text-center
     xl:ml-24 
  "
           >
-            <FaMapMarkerAlt className=" lg:text-3xl xs-min:text-[18px] bg-blue-500 hover:bg-transparent hover:border-2 border-orange-400 rounded-[50%] p-1 cursor-pointer  xl:text-2xl" />{" "}
-            <p className=" lg:text-2xl xs-min:text-[13px]   xl:text-[1.2rem]">
+            <FaMapMarkerAlt className=" lg:text-3xl xs-min:text-[18px]  bg-violet-700 hover:bg-transparent hover:border-2 border-orange-400 rounded-[50%] p-1 cursor-pointer  xl:text-2xl" />{" "}
+            <p className="  lg:text-2xl xs-min:text-[13px]   xl:text-[1.2rem]">
               Malanje-Maxinde{" "}
             </p>
-            <FaPhoneAlt className=" lg:text-3xl xs-min:text-[18px] hover:bg-transparent hover:border-2 border-orange-400   bg-blue-500 rounded-[50%]  cursor-pointer p-1 xl:text-2xl" />{" "}
-            <p className="lg:text-2xl xs-min:text-[13px]   xl:text-[1.2rem]">
+            <FaPhoneAlt className="  lg:text-3xl xs-min:text-[18px] hover:bg-transparent hover:border-2 border-orange-400    bg-violet-700 rounded-[50%]  cursor-pointer p-1 xl:text-2xl" />{" "}
+            <p className="  lg:text-2xl xs-min:text-[13px]   xl:text-[1.2rem]">
               {" "}
               92013000{" "}
             </p>
