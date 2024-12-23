@@ -13,7 +13,7 @@ const Menus = ({TiThMenu}) => {
     
     <button onClick={showDrawer} className="text-white  pr-4">
         
-        <TiThMenu className="text-green-500 lg:text-[3.5rem] md:text-[3rem]  xs-min:text-[1.8rem]    xl:text-[2.5rem]" />
+        <TiThMenu className="text-yellow-950 lg:text-[3.5rem] md:text-[3rem]  xs-min:text-[1.8rem]    xl:text-[2.5rem]" />
           </button>
  
       <Drawer title="Basic Drawer" onClose={onClose} open={open}>

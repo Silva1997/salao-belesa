@@ -16,7 +16,7 @@ xs-min:bg-center
 xs-min:w-full 
 
 xs-min:bg-cover 
-xs-min:bg-[url('./assets/fundo1.jpg')]
+xs-min:bg-[url('./assets/Fundo1.png')]
 xs-min:h-[30rem]
 
 
@@ -31,15 +31,15 @@ md:auto-cols-[250px]
 md:grid-rows-[25rem_25rem]
 md:place-items-center
 
-md:bg-[url('./assets/media.png')]
+md:bg-[url('./assets/Fundo1.png')]
 md:w-full  
 md:bg-cover
-md:h-[50rem]
+md:h-[60rem]
 
-landscape:tablet:h-[60rem]
+landscape:tablet:h-[65rem]
 landscape:tablet:bg-center
 portrait:tablet:bg-center
-portrait:tablet:h-[60rem]
+portrait:tablet:h-[65rem]
 
 lg:w-full 
 lg:bg-left-bottom
@@ -50,18 +50,16 @@ lg:bg-[url('../../assets/figma.png')]
 overflow-hidden
 
 xl:w-full
-xl:bg-center
+xl:bg-top
+
+
+
+xl:h-full
 xl:bg-cover
 
-xl:bg-[url('./assets/figma.png')]
-xl:h-[120dvh]
 
 
 
-landscape:w-[100%] 
-landscape:bg-cover 
-landscape:h-[55rem]
-landscape:bg-center 
 
 
 bg-no-repeat 
@@ -80,23 +78,22 @@ bg-gray-950
   xs-min:relative
   xs-min:p-1
   xs-min:top-0
-  xs-min:h-[32rem]
-    xs-min:backdrop-brightness-50
+
 
   md:relative
 
-  md:top-[30.9rem]
-  md:backdrop-brightness-95
+  md:-top-40
+
 
 xl:relative
 xl:-top-56
 xl:-left-64
 
 landscape:tablet:relative
-landscape:tablet:top-[3rem]
-landscape:tablet:backdrop-brightness-95
+landscape:tablet:-top-40
+
 portrait:tablet:relative
-portrait:tablet:top-[35rem]
+portrait:tablet:-top-40
 "
       >
         <div
@@ -156,12 +153,12 @@ portrait:tablet:top-[35rem]
 
 
     md:ml-0
-    md:text-[2rem]
+    md:text-[2.3rem]
     md:font-extrabold
     md:leading-10
     md:text-white
     /* md:text-transparent bg-clip-text bg-gradient-to-r from-red-300 from-[48%] to-[100%] to-orange-300*/
-
+ portrait:tablet:text-white
   landscape:tablet:text-white
     landscape:font-extrabold
    
