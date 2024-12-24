@@ -55,7 +55,7 @@ const Footer = () => {
         </div>
 
 
-        <div className="flex flex-col gap-2">
+        <div className="xs-min:hidden xl:flex xl:flex-col xl:gap-2 sm:flex sm:flex-col sm:gap-2 md:flex md:flex-col md:gap-2 lg:flex lg:flex-col lg:gap-2">
             <h6 className="xs-min:text-start xl:pt-0 md:text-xl md:text-start sm:text-sm  xs-min:text-sm xl:text-3xl text-white font-bold">
               Reclamações
             </h6>

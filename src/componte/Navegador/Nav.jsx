@@ -50,11 +50,13 @@ lg:bg-[url('../../assets/figma.png')]
 overflow-hidden
 
 xl:w-full
-xl:bg-top
+xl:bg-center
 
 
 
-xl:h-full
+xl:bg-[url('./assets/./salao/Fundo-p1.jpg')]
+
+xl:h-[89vh]
 xl:bg-cover
 
 
@@ -63,7 +65,7 @@ xl:bg-cover
 
 
 bg-no-repeat 
-bg-gray-950
+
 "
     >
       {/* 
@@ -86,7 +88,7 @@ bg-gray-950
 
 
 xl:relative
-xl:-top-56
+xl:-top-96
 xl:-left-64
 
 landscape:tablet:relative
@@ -163,7 +165,7 @@ portrait:tablet:-top-40
     landscape:font-extrabold
    
     font-sans 
-    xl:text-xl
+    xl:text-2xl
     xl:font-semibold 
     xl:ml-2
     xl:leading-2

@@ -7,13 +7,23 @@ export default function Grid() {
     const [pscrollright, setScrollright] = React.useState(true);
   
     //funcao para actualizar os  estados do butao
+    // function updateButton() {
+    //   const scrollcontainer = scrolltrolador.current;
+    //   if (scrollcontainer) {
+    //     setScrollleft(scrollcontainer.scrollLeft > 0);
+    //     setScrollright(
+    //       scrollcontainer.scrollLeft + scrollcontainer.offsetWidth <
+    //         scrollcontainer.scrollWidth
+    //     );
+    //   }
+    // }
+
     function updateButton() {
       const scrollcontainer = scrolltrolador.current;
       if (scrollcontainer) {
         setScrollleft(scrollcontainer.scrollLeft > 0);
         setScrollright(
-          scrollcontainer.scrollLeft + scrollcontainer.offsetWidth <
-            scrollcontainer.scrollWidth
+          scrollcontainer.scrollLeft + scrollcontainer.offsetWidth < scrollcontainer.scrollWidth
         );
       }
     }

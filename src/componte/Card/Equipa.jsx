@@ -1,5 +1,8 @@
 import { motion } from "framer-motion";
 import pessoa from "../../assets/pessoa.png";
+import pessoa0 from "../../assets/salao/10869.jpg";
+import pessoa1 from "../../assets/salao/pessoa10.jpg";
+import pessoa2 from "../../assets/salao/pessoa12.jpg";
 const Equipa = () => {
   return (
     <div>
@@ -33,9 +36,9 @@ const Equipa = () => {
 
             <div className=" xl:m-0 xs-min:m-4  ">
               <img
-                src={pessoa}
+                src={pessoa0}
                 alt="Imagem do Card"
-                className="xl:rounded-none xs-min:rounded-2xl portrait:tablet:h-[26.4rem] landscape:tablet:h-[20.4rem] sm:w-full xs-min:object-cover  sm:object-fill sm:h-full xs-min:max-w-[100%] xs-min:max-h-[18rem] md:h-full md:object-cover md:object-center  md:w-full xs-min:object-center xl:object-cover w-full xl:h-[27rem] xs-min:h-[12.5rem] transform transition-transform duration-300 ease-in-out group-active:scale-110 group-hover:scale-105"
+                className="xl:rounded-none xs-min:rounded-2xl portrait:tablet:h-[26.4rem] landscape:tablet:h-[20.4rem] sm:w-full xs-min:object-cover  sm:object-fill sm:h-full xs-min:w-full xs-min:max-w-[100%] xs-min:max-h-[18rem] md:h-[19rem] md:object-cover md:object-center  md:w-full xs-min:object-center xl:object-cover xl:object-right w-full xl:h-[27rem] xs-min:h-[12.5rem] transform transition-transform duration-300 ease-in-out group-active:scale-110 group-hover:scale-105"
               />
             </div>
 
@@ -57,9 +60,9 @@ const Equipa = () => {
 
             <div className=" xl:m-0 xs-min:m-4  ">
               <img
-                src={pessoa}
+                src={pessoa1}
                 alt="Imagem do Card"
-                className="xl:rounded-none xs-min:rounded-2xl portrait:tablet:h-[26.4rem] landscape:tablet:h-[20.4rem] sm:w-full xs-min:object-cover  sm:object-fill sm:h-full xs-min:max-w-[100%] xs-min:max-h-[18rem] md:h-full md:object-cover md:object-center  md:w-full xs-min:object-center xl:object-cover w-full xl:h-[27rem] xs-min:h-[12.5rem] transform transition-transform duration-300 ease-in-out group-active:scale-110 group-hover:scale-105"
+                className="xl:rounded-none xs-min:object-top xs-min:w-[22rem] xs-min:object-cover  xl:object-top xs-min:rounded-2xl portrait:tablet:h-[26.4rem] landscape:tablet:h-[20.4rem] sm:w-full   sm:object-fill sm:h-full xs-min:max-w-[100%] xs-min:max-h-[18rem] md:h-full md:object-cover md:object-center  md:w-full xs-min:object-center xl:object-cover w-full xl:h-[27rem] xs-min:h-[12.5rem] transform transition-transform duration-300 ease-in-out group-active:scale-110 group-hover:scale-105"
               />
             </div>
 
@@ -81,9 +84,10 @@ const Equipa = () => {
 
             <div className=" xl:m-0 xs-min:m-4  ">
               <img
-                src={pessoa}
+                src={pessoa2}
                 alt="Imagem do Card"
-                className="xl:rounded-none xs-min:rounded-2xl portrait:tablet:h-[26.4rem] landscape:tablet:h-[20.4rem] sm:w-full xs-min:object-cover  sm:object-fill sm:h-full xs-min:max-w-[100%] xs-min:max-h-[18rem] md:h-full md:object-cover md:object-center  md:w-full xs-min:object-center xl:object-cover w-full xl:h-[27rem] xs-min:h-[12.5rem] transform transition-transform duration-300 ease-in-out group-active:scale-110 group-hover:scale-105"
+                className="xl:rounded-none xs-min:object-top xs-min:w-[22rem] xs-min:object-cover  xl:object-top xs-min:rounded-2xl portrait:tablet:h-[26.4rem] landscape:tablet:h-[20.4rem] sm:w-full   sm:object-fill sm:h-full xs-min:max-w-[100%] xs-min:max-h-[18rem] md:h-full md:object-cover md:object-center  md:w-full xs-min:object-center xl:object-cover w-full xl:h-[27rem] xs-min:h-[12.5rem] transform transition-transform duration-300 ease-in-out group-active:scale-110 group-hover:scale-105"
+
               />
             </div>
 
@@ -106,7 +110,8 @@ const Equipa = () => {
               <img
                 src={pessoa}
                 alt="Imagem do Card"
-                className="xl:rounded-none xs-min:rounded-2xl portrait:tablet:h-[26.4rem] landscape:tablet:h-[20.4rem] sm:w-full xs-min:object-cover  sm:object-fill sm:h-full xs-min:max-w-[100%] xs-min:max-h-[18rem] md:h-full md:object-cover md:object-center  md:w-full xs-min:object-center xl:object-cover w-full xl:h-[27rem] xs-min:h-[12.5rem] transform transition-transform duration-300 ease-in-out group-active:scale-110 group-hover:scale-105"
+                className="xl:rounded-none xs-min:object-top xs-min:w-[22rem] xs-min:object-cover  xl:object-top xs-min:rounded-2xl portrait:tablet:h-[26.4rem] landscape:tablet:h-[20.4rem] sm:w-full   sm:object-fill sm:h-full xs-min:max-w-[100%] xs-min:max-h-[18rem] md:h-full md:object-cover md:object-center  md:w-full xs-min:object-center xl:object-cover w-full xl:h-[27rem] xs-min:h-[12.5rem] transform transition-transform duration-300 ease-in-out group-active:scale-110 group-hover:scale-105"
+
               />
             </div>
 
