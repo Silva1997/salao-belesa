@@ -116,13 +116,13 @@ const MyComponent = () => {
         onScroll={updateButton}
         className="md:p-2 md:grid md:grid-flow-col md:grid-rows-1 md:gap-2 md:place-items-center xs-min:grid xs-min:grid-flow-col md:auto-cols-[480px] xs-min:auto-cols-[250px] xs-min:gap-2 xs-min:pb-4 xl:grid overflow-y-hidden  xs-min:overflow-x-auto xl:overflow-x-hidden lg:overflow-x-hidden  xs-min:overflow-x-[bg-white]  xl:auto-cols-[360px] xl:grid-flow-col xl:place-items-center xl:gap-5 xl:pb-4"
       >
-        <div className="xs-min:rounded-md border-[2px] border-amber-400 bg-[url('./assets/Tranca1.png')] bg-cover bg-center bg-no-repeat -min:w-80 md:w-[30rem]  md:h-[30rem] xs-min:h-[20rem] xl:w-[60vh] xl:h-[27rem] bg-zinc-900">
+        <div className="xs-min:rounded-md border-[2px] border-amber-400 bg-[url('https://i.imgur.com/vVv8PDR.png')] bg-cover bg-center bg-no-repeat -min:w-80 md:w-[30rem]  md:h-[30rem] xs-min:h-[20rem] xl:w-[60vh] xl:h-[27rem] bg-zinc-900">
           {/* 01 */}
         </div>
-        <div className="xs-min:rounded-md border-[2px] border-amber-400 bg-[url('./assets/Tranca2.png')] bg-cover bg-center bg-no-repeat md:w-[30rem] md:h-[30rem] xl:w-[60vh] xl:h-[27rem] bg-red-500">
+        <div className="xs-min:rounded-md border-[2px] border-amber-400 bg-[url('https://i.imgur.com/PzL4k1o.jpeg')] bg-cover bg-center bg-no-repeat md:w-[30rem] md:h-[30rem] xl:w-[60vh] xl:h-[27rem] bg-red-500">
           {/* 02 */}
         </div>
-        <div className="xs-min:rounded-md border-[2px] border-amber-400 bg-[url('./assets/Tranca3.png')] bg-cover bg-center bg-no-repeat md:w-[30rem] md:h-[30rem] xl:w-[60vh] xl:h-[27rem] bg-blue-500">
+        <div className="xs-min:rounded-md border-[2px] border-amber-400 bg-[url('https://i.imgur.com/zn8GaXV.jpeg')] bg-cover bg-center bg-no-repeat md:w-[30rem] md:h-[30rem] xl:w-[60vh] xl:h-[27rem] bg-blue-500">
           {/* 03 */}
         </div>
         <div className="xs-min:rounded-md border-[2px] border-amber-400 xl:w-[60vh] xl:h-[27rem] bg-white md:w-[30rem] md:h-[30rem]">
@@ -152,3 +152,24 @@ const MyComponent = () => {
 };
 
 export default MyComponent;
+
+
+
+// Aqui
+
+
+{/* <div className="xs-min:rounded-md border-[2px] border-amber-400 bg-[url('./assets/Tranca1.png')] bg-cover bg-center bg-no-repeat -min:w-80 md:w-[30rem]  md:h-[30rem] xs-min:h-[20rem] xl:w-[60vh] xl:h-[27rem] bg-zinc-900"> */}
+{/* 01 */}
+// </div>
+{/* <div className="xs-min:rounded-md border-[2px] border-amber-400 bg-[url('./assets/Tranca2.png')] bg-cover bg-center bg-no-repeat md:w-[30rem] md:h-[30rem] xl:w-[60vh] xl:h-[27rem] bg-red-500"> */}
+{/* 02 */}
+// </div>
+{/* <div className="xs-min:rounded-md border-[2px] border-amber-400 bg-[url('./assets/Tranca3.png')] bg-cover bg-center bg-no-repeat md:w-[30rem] md:h-[30rem] xl:w-[60vh] xl:h-[27rem] bg-blue-500"> */}
+{/* 03 */}
+// </div>
+{/* <div className="xs-min:rounded-md border-[2px] border-amber-400 xl:w-[60vh] xl:h-[27rem] bg-white md:w-[30rem] md:h-[30rem]"> */}
+{/* 04 */}
+// </div>
+{/* <div className="xs-min:rounded-md border-[2px] border-amber-400 xl:w-[60vh] xl:h-[27rem] bg-white md:w-[30rem] md:h-[30rem]"> */}
+{/* 05 */}
+// </div>

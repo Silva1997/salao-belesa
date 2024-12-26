@@ -3,6 +3,11 @@
 @tailwind utilities;
 
 @layer components {
+
+  .scrollbar::-webkit-scrollbar {
+    width: 0px;
+    height:0px;
+    }
     /* Estiliza a barra de rolagem horizontal */
     ::-webkit-scrollbar {
       height: 8px; /* Define a altura da barra de rolagem horizontal */

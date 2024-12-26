@@ -7,7 +7,7 @@ const Equipa = () => {
   return (
     <div>
 
-      <div className="mb-16 xl:backdrop-brightness-75 portrait:tablet:bg-[url('./assets/fundo-p.jpg')] landscape:tablet:bg-[url('./assets/fundo-p.jpg')] xl:bg-[url('./assets/fundo-p.jpg')] xs-min:bg-slate-100 bg-cover bg-center bg-no-repeat    portrait:tablet:bg-red-200 landscape:tablet:bg-violet-800 md:pr-16 md:pl-16 w-full  landscape:h-auto  xs-min:max-h-auto xs-min:pl-4 xs-min:pr-4  md:h-auto  sm:h-auto    overflow-hidden pt-0  xl:h-[33rem] bg-zinc-80 xl:pl-28 xl:pr-28">
+      <div className="mb-16 xl:backdrop-brightness-75 portrait:tablet:bg-[url('https://i.imgur.com/c2N4biz.jpeg')] landscape:tablet:bg-[url('./assets/fundo-p.jpg')] xl:bg-[url('./assets/fundo-p.jpg')] xs-min:bg-slate-100 bg-cover bg-center bg-no-repeat    portrait:tablet:bg-red-200 landscape:tablet:bg-violet-800 md:pr-16 md:pl-16 w-full  landscape:h-auto  xs-min:max-h-auto xs-min:pl-4 xs-min:pr-4  md:h-auto  sm:h-auto    overflow-hidden pt-0  xl:h-[33rem] bg-zinc-80 xl:pl-28 xl:pr-28">
         <div className="flex flex-col justify-center gap-1">
           <motion.h5
             className="md:text-3xl xs-min:text-[1.08rem]  font-bold xl:text-[1.8rem] 2xl:text-[2rem] text-start text-transparent bg-clip-text bg-gradient-to-r from-amber-500 from-[5%] to-[20%] to-red-500"

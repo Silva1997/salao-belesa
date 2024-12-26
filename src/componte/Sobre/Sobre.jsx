@@ -2,6 +2,8 @@ import { motion } from "framer-motion";
 import cabelo from "../../assets/girl.jpg";
 import unhas from "../../assets/unhas-Cy.jpg";
 import makeup from "./makeup1.jpg";
+import penicure from '../../assets/salao/manicure-p1.jpg'
+
 export default function Sobre() {
   return (
     <div>
@@ -33,7 +35,7 @@ export default function Sobre() {
 
             <div className=" xl:m-0 xs-min:m-4  ">
               <img
-                src={cabelo}
+                src={'https://i.imgur.com/huwax6o.jpeg'}
                 alt="Imagem do Card"
                 className="  xs-min:w-[28rem] xl:rounded-none xs-min:rounded-2xl portrait:tablet:h-[26.4rem] landscape:tablet:h-[20.4rem] sm:w-full sm:object-cover sm:h-full xs-min:max-w-[100%] xs-min:max-h-[18rem] md:h-[19rem] md:object-cover md:object-center  md:w-[100%] xs-min:object-cover xs-min:object-center xl:object-cover w-full xl:h-[27rem] xs-min:h-[12.5rem] transform transition-transform duration-300 ease-in-out group-active:scale-110 group-hover:scale-105"
               />
@@ -111,7 +113,7 @@ export default function Sobre() {
 
             <div className=" xl:m-0 xs-min:m-4  ">
               <img
-                src={makeup}
+                src={penicure}
                 alt="Imagem do Card"
                 className=" xs-min:w-[28rem] xl:rounded-none xs-min:rounded-2xl portrait:tablet:h-[26.4rem] landscape:tablet:h-[20.4rem] sm:w-full xs-min:object-cover  sm:object-fill sm:h-full xs-min:max-w-[100%] xs-min:max-h-[18rem] md:h-[19rem] md:object-cover md:object-center  md:w-full xs-min:object-center xl:object-cover w-full xl:h-[27rem] xs-min:h-[12.5rem] transform transition-transform duration-300 ease-in-out group-active:scale-110 group-hover:scale-105"
               />
@@ -121,7 +123,7 @@ export default function Sobre() {
 
             <div className=" sm:pt-0 md:pt-0 xl:pt-0  md:top-0  xs-min:pt-20   xl:relative  xl:top-10 pl-4">
               <h6 className=" md:text-[1.7rem] xs-min:text-xl xl:text-[1.8rem] text-start text-transparent bg-clip-text bg-gradient-to-r from-amber-500 from-[5%] to-[20%] to-red-500 font-bold">
-                Makeup
+                Penicure
               </h6>
               <p className=" md:text-black md:text-xl xs-min:text-black xs-min:text-sm xl:text-[15px] text-white">
               Belesa impecáveis, confiança inabalável.
