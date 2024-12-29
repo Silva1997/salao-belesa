@@ -3,34 +3,21 @@
 @tailwind utilities;
 
 @layer components {
+@media (min-width:360px){
+  .Esconder{
+   scrollbar-color: transparent transparent;
+   overflow-x:auto ;
+  }
 
-  .scrollbar::-webkit-scrollbar {
-    width: 0px;
-    height:0px;
-    }
+  }
+
+
     /* Estiliza a barra de rolagem horizontal */
-    ::-webkit-scrollbar {
-      height: 8px; /* Define a altura da barra de rolagem horizontal */
-      width: 10px;  /* Define a largura da barra de rolagem vertical */
-    }
-  
-    /* Estiliza o fundo da barra de rolagem horizontal */
-    ::-webkit-scrollbar-track {
-      background-color: transparent; /* Torna o fundo transparente para a rolagem horizontal */
-    }
-  
-    /* Estiliza a parte "deslizante" (thumb) da barra de rolagem horizontal */
-    ::-webkit-scrollbar-thumb {
-      background-color: rgba(46, 32, 1, 0.3);; 
-    }
-  /* Torna o thumb horizontal transparente */
-    /* Estiliza a barra de rolagem vertical */
-  
-    /* Estiliza a parte "deslizante" (thumb) da barra de rolagem vertical */
-    ::-webkit-scrollbar-thumb- {
-      background-color: transparent; /* Cor do thumb vertical */
-      border-radius: 10px;
-    }
+    /* ::-webkit-scrollbar {
+      height: 8px; Define a altura da barra de rolagem horizontal
+      width: 10px;  Define a largura da barra de rolagem vertical
+    } */
+   
   
    
   }

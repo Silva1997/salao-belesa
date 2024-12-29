@@ -1,17 +1,7 @@
 // import React from 'react';
-import {
-  Button,
-  Cascader,
-  DatePicker,
-  Form,
-  Input,
-  InputNumber,
-  Mentions,
-  Select,
-  TreeSelect,
-  Segmented,
-} from "antd";
-const { RangePicker } = DatePicker;
+import { Button, DatePicker, Form, Input, InputNumber, Select } from "antd";
+import { useState } from "react";
+
 const formItemLayout = {
   labelCol: {
     xs: {
@@ -32,18 +22,34 @@ const formItemLayout = {
 };
 const App = () => {
   const [form] = Form.useForm();
+  const [dado,setDado]=useState()
+
+
   const variant = Form.useWatch("variant", form);
+
+  function alterarData(date){
+    setDado(date)
+
+  }
+  function handleSelecionar(value) {
+    console.log("Valor selecionado", value);
+  }
+
+  function Envira() {
+    console.log(form.getFieldsValue(), "Dados");
+    form.resetFields();
+  }
   return (
     <Form
       {...formItemLayout}
       form={form}
       variant={variant || "outlined"}
-    //   style={{
-    //     width:'374px',
-    //     maxWidth: 600,
-    //   }}
+      //   style={{
+      //     width:'374px',
+      //     maxWidth: 600,
+      //   }}
 
-    className=" xs-min:w-[374px] md:w-[60rem]  xl:w-[72rem] "
+      className=" xs-min:pl-4 xs-min:pr-4 xs-min:w-[374px] md:w-[60rem]  xl:w-[72rem] "
       initialValues={{
         variant: "outlined",
       }}
@@ -53,12 +59,12 @@ const App = () => {
       </Form.Item> */}
 
       <Form.Item
-        label="Nome"
+        label={<p className="text-white">Nome</p>}
         name="Input"
         rules={[
           {
             required: true,
-            message: "Please input!",
+            message: "Por favor preencha os dados!",
           },
         ]}
       >
@@ -66,8 +72,8 @@ const App = () => {
       </Form.Item>
 
       <Form.Item
-        label="Numero"
-        name="InputNumber"
+        label={<p className="text-white">Numero</p>}
+        name="Por favor preencha os dados!"
         rules={[
           {
             required: true,
@@ -76,6 +82,7 @@ const App = () => {
         ]}
       >
         <InputNumber
+          maxLength={9}
           style={{
             width: "100%",
           }}
@@ -83,7 +90,7 @@ const App = () => {
       </Form.Item>
 
       <Form.Item
-        label="Messagem"
+        label={<p className="text-white">Messagem</p>}
         name="TextArea"
         rules={[
           {
@@ -95,10 +102,8 @@ const App = () => {
         <Input.TextArea />
       </Form.Item>
 
-    
-
       <Form.Item
-        label="Select"
+        label={<p className="text-white">Selecione o serviço</p>}
         name="Select"
         rules={[
           {
@@ -107,15 +112,28 @@ const App = () => {
           },
         ]}
       >
-        <Select />
+        <Select onChange={handleSelecionar}>
+          <Select.OptGroup label="Cabelo" key={1}>
+            <Select.Option value="80,00" key={"A1"}>
+              Corte + Escova
+            </Select.Option>
+            <Select.Option value="50,00" key={"A2"}>
+              Hidratação
+            </Select.Option>
+          </Select.OptGroup>
+          <Select.OptGroup label="Manicure" key={2}>
+            <Select.Option value="62,00" key={"A3"}>
+              Esmaltação de Gel de Mão
+            </Select.Option>
+            <Select.Option value="73,00" key={"A4"}>
+              Blindagem
+            </Select.Option>
+          </Select.OptGroup>
+        </Select>
       </Form.Item>
 
-     
-
-     
-
       <Form.Item
-        label="Horario"
+  label={<p className="text-white">Data marcação</p>}
         name="DatePicker"
         rules={[
           {
@@ -124,18 +142,24 @@ const App = () => {
           },
         ]}
       >
-        <DatePicker />
+        <DatePicker onChange={alterarData} format={"DD-MM-YYYY"} value={dado} />
       </Form.Item>
-
-    
 
       <Form.Item
         wrapperCol={{
-          offset: 6,
+          offset: 4,
           span: 16,
         }}
       >
-        <Button  type="primary" htmlType="submit">
+        <Button
+        className="xs-min:w-56"
+          onClick={(e) => {
+            e.preventDefault();
+            Envira();
+          }}
+          type="primary"
+          htmlType="submit"
+        >
           Encomendar
         </Button>
       </Form.Item>
